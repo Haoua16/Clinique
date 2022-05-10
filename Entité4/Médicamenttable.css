@@ -1,0 +1,178 @@
+.première
+         {
+          background: #279C4F;
+          height: 10%;
+          display: flex;
+         }
+
+.première img
+             {
+              width: 44px;
+              height: 48px;
+              margin-top: 6px;
+              margin-left: 6px;	
+             }
+
+.slogan
+       {
+       	color: white;
+       	margin-left: 41%;
+       	margin-top: 11px;
+       }
+
+.btn
+    {
+     margin-left: 32%;
+     margin-top: 2px;
+    }
+
+.deuxième
+         {
+          background: #279C4F;
+          height: 30%;
+          width: 25%;	
+         }
+
+.phtenbas
+         {
+          position: relative;	
+          width: 25%;
+          height: 60%;	
+         }   
+
+.brdenbas1
+          {
+           background: #047BF5;
+           width: 50%;
+           height: 5%;
+           margin-left: 25%;
+           margin-top: -31px;	
+          } 
+
+.brdenbas2
+          {
+           background: #279C4F;
+           width: 23%;
+           height: 4.9%;
+           margin-left: 75%;
+           margin-top: -31px;	
+          }                           
+
+.brdàcoté1
+          {
+           background: #279C4F;
+           width: 2%;
+           height: 64%;
+           margin-top: -41.3%;
+           float: right; 
+          } 
+
+.brdàcoté2
+          {
+           background: #047BF5;
+           width: 2%;
+           height: 165px;
+           margin-top: -165px;
+           float: right; 
+          }  
+
+
+.listerecherche
+               {
+               	margin-left: 30%;
+               	display: flex;
+               	margin-top: -39%;
+               } 
+
+.liste
+      {
+       margin-top: -1px;	
+      }
+
+.liste hr
+  {
+   width: 152%;  
+   border: 2px solid black; 
+   margin-top: 2px;
+   margin-left: -8%;
+  } 
+
+.recherche 
+          {
+           margin-left: 15%;
+           margin-top: 1%;	 
+          } 
+
+.recherche input
+       {
+        width: 115%;
+       }
+
+.icone
+      {
+      	position: relative;
+       	bottom: 25px;
+       	left: 103%;
+      }                                              
+ 
+.tableau
+        {
+         margin-top: 5%;
+         margin-left: 30%;      
+        } 
+
+.colonne
+  {
+   border: 1px solid black;  /*auront une bordure de 1px */
+   width: 170px;
+   background: rgb(230, 230, 230);
+  }   
+
+.ligne /* Toutes les cellules des tableaux... */
+  {
+   border: 1px solid black; /* auront une bordure de 1px */
+   margin-top: -5px;
+   width: 170px;
+
+     } 
+
+
+#enr3
+       {
+       	font-size: 60%;
+       	margin-left: 3%;
+ 
+       }     
+#enr1
+       {
+       	font-size: 60%;
+       	margin-left: 3%;
+       }           
+
+
+.formul label
+             {
+               font-size: 20px;
+                margin-left: 2%;
+                font-weight: bold;
+                margin-top: 2%;
+
+             }       
+
+.formul input{
+                    font-size: 25px;
+                    width: 85%;
+                    border-radius: 10px;
+                    margin-left: 2%;
+                   }
+
+.modal-header
+             {
+              background-color: #279C4F;
+             }
+
+
+.fvert
+      {
+       background-color: #279C4F;
+      }                                       

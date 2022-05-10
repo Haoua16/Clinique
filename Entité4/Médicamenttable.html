@@ -1,0 +1,143 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Médicamenttable.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Table Médicament</title>
+</head>
+<body>
+     <!-- Button trigger modal -->
+
+<!-- Modal -->
+
+  <!--  My test-->
+
+  <div class="modal fade" id="addmed" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ajouter un fournisseur</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="formul">
+          <form>
+            <div class="container">
+               <div class="row mt-4">
+                    <div class="col-md-4">
+                       <label for="Numéro">Numéro</label>
+                    </div>  
+                    <div class="col-md">
+                       <input type="text" name="Numéro"><br>
+                    </div>                    
+            </div>
+            <div class="row mt-4">
+                   <div class="col-md-4">
+                       <label for="Nom">Nom</label>
+                   </div>  
+                   <div class="col-md">
+                       <input type="text" name="Nom"><br>
+                   </div>                                   
+            </div>
+            <div class="row mt-4">
+                   <div class="col-md-4">
+                        <label for="Type">Type</label>
+                   </div>  
+                   <div class="col-md">
+                        <input type="text" name="Type"><br>
+                   </div>
+            </div>
+            <div class="row mt-4">
+                   <div class="col-md-4">
+                        <label for="Quantité">Quantité</label>
+                   </div>  
+                   <div class="col-md">
+                        <input type="text" name="Quantité"><br> 
+                   </div>  
+            </div>
+            </div>                       
+          </form>
+        </div>       
+      </div>
+      <div class="modal-footer fvert">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Supprimer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Voulez-vous vraiment supprimer cette ligne ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Oui</button>
+        <button type="button" class="btn btn-primary">Non</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+      <div class="première">
+      	  <img src="logoc.jpg">
+      	  <div class="slogan">
+      	  <h3>Anw ko kènèya</h3>
+      	  </div>
+      	  <div class="btn">
+      	  <a href="Médicamentform.html" class="btn btn-success" id="enr2" data-bs-toggle="modal" data-bs-target="#addmed">Ajouter</a></button>
+      	  </div>
+      </div>
+      <div class="deuxième"></div>
+      <img class="phtenbas" src="photo2.jpg">
+      <div class="brdenbas1"></div>
+      <div class="brdenbas2"></div>
+      <div class="brdàcoté1"></div>
+      <div class="brdàcoté2"></div>
+        <div class="listerecherche">
+      	   <div class="liste">
+      	   <h4>La liste des médicaments</h4>
+      	   <hr>
+      	   </div>
+      	   <div class="recherche">
+      	   <input class="zonere" type="Text" name="nom" placeholder="Rechercher..."><i class="fa fa-search icone" style="font-size:20px"></i>
+      	   </div>
+      	</div>
+      	   <table class="tableau">
+      		<tr>	    
+      		    <th class="colonne">Numéro</th>
+      		    <th class="colonne">Nom</th>
+      		    <th class="colonne">Type</th>
+      		    <th class="colonne">Quantité</th>
+           		<th class="colonne">Action</th>
+           		</tr>
+      		<tr>
+		          <td class="ligne">Ppm00320</td>
+		          <td class="ligne">Paracetamol</td>
+		          <td class="ligne">Comprimé</td>
+		          <td class="ligne">100</td>
+		          <td class="ligne"><a href="Médicamentform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                 <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                  </button></td>
+            </tr>
+            </table>      
+      </div>
+
+<script src="bootstrap.min.js"></script>
+</body>
+</html>

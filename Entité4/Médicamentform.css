@@ -1,0 +1,70 @@
+.entête{
+        background: #279C4F;
+        height: 55px;
+        display: flex;
+       }
+
+.entête img{
+            width: 40px;
+            height: 43px;
+            margin-top: 6px;
+            margin-left: 6px;
+   }
+
+.sl{
+    margin-left: 43%;
+    margin-top: 3px;
+   } 
+ 
+
+.ifm{
+    
+     width: 40%;
+     top: 10%;
+     float: left;
+     /*display: flex;*/
+    }
+
+.right{
+       background-color: #047BF5;
+       float: right;
+       width: 60%;
+      }
+
+.point2 label{
+              font-size: 25px;
+              margin-left: 7%;
+             }       
+
+.point2 input{
+              width: 70%;
+              height: 50px;
+              border-radius: 10px;
+              margin-top: 9%;
+              margin-left: 3%;
+             } 
+.photo1{
+        width: 540px;
+        height: 350px;
+        margin: 0px;
+        padding: 0px;
+       }  
+
+.photo2{
+        width: 540px;
+        height: 275px;
+        margin: 0px;
+        padding: 0px;
+       }      
+
+#enr2{
+	  margin-left: 68%;
+     }
+
+#enr1{
+      margin-left: 5%;
+     }
+.cc{
+    display: flex;
+    margin-top: 10%;
+   }

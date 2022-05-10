@@ -1,0 +1,116 @@
+body{
+     margin: 0px;
+     padding: 0px;   
+    }
+
+.entête{
+        background: #279C4F;
+        width: 20%;
+        height: 45%;
+        display: flex;
+       }
+
+.entête img{
+    width: 50px;
+    height: 53px;
+    margin-top: 6px;
+    margin-left: 6px;
+   } 
+
+.point2{
+        background: #279C4F;
+        width: 80%;
+        height: 10%;
+        position: absolute;
+        left: 20%;
+        top: -1%;
+       }
+
+.baj
+    {
+     display: flex;
+     margin-top: 1%;
+    }
+h2
+  {
+   margin-left: 28%;
+   
+   text-align: center;
+  }
+
+#enr2{
+      margin-left: 40%;
+      margin-top: 2px;  
+     }
+
+
+.point3{
+        background: #047BF5;
+        width: 20%;
+        height: 55%;
+
+       }        
+
+#enr1{
+      font-size: 10px;
+     } 
+
+#enr3{
+      font-size: 10px;
+     }
+.tableau
+        {
+         margin-right: 15%;
+        }
+
+.or
+  {
+   border: 1px solid black;  auront une bordure de 1px 
+   width: 21%;
+  }
+
+.colonne
+  {
+   border: 1px solid black; /* auront une bordure de 1px */
+   width: 21%;
+  }   
+
+.ligne /* Toutes les cellules des tableaux... */
+  {
+   border: 1px solid black; /* auront une bordure de 1px */
+   width: 20%;
+  }
+
+.tableau
+        {
+         float: right;
+         margin-top: -35%;
+         margin-right: 7%;       
+        }  
+
+.formul label
+             {
+               font-size: 20px;
+                margin-left: 2%;
+                font-weight: bold;
+                margin-top: 2%;
+
+             }       
+
+.formul input{
+                    font-size: 25px;
+                    width: 85%;
+                    border-radius: 10px;
+                    margin-left: 2%;
+                   }
+
+.modal-header
+             {
+              background-color: #279C4F;
+             }
+
+
+.fvert
+             {
+              background-color: #279C4F;
+             }                                
