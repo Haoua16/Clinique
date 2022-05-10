@@ -1,0 +1,261 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Clinique/assets/css/Fournisseurstable.css">
+	<link rel="stylesheet" type="text/css" href="Clinique/assets/bootstrap/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.js">
+ -->	<title>Table_Fournisseurs</title>
+</head>
+<body>
+			 <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="addfour" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ajouter Fournisseurs</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <div class="leformulaire">
+	    		<div class="formul1">	    		      
+	    			<form>
+	    			<div class="container">
+	    				<div class="row">
+	    					<div class="col-md-3">
+	    					      <label for="Nom">Nom</label>
+	    					</div>	
+	    					<div class="col-md">
+	    						<input type="text" name="Nom"><br>
+	    					</div>
+	    				</div>
+	    				<div class="row mt-3">	
+	    					<div class="col-md-3">
+	    					<label for="Phone">Phone</label>
+	    					</div>
+	    					<div class="col-md">
+	    						<input type="text" name="Phone"><br>
+	    					</div>
+	    				</div>
+	    				<div class="row mt-4">		
+	    					<div class="col-md-3">
+	    					<label for="Prénom">Prénom</label>
+	    					</div>
+	    					<div class="col-md">
+	    						<input type="text" name="Prénom"><br>
+	    					</div>
+	    				</div>
+	    				<div class="row mt-4">		
+	    					<div class="col-md-3">
+	    					      <label for="Adresse">Adresse</label>
+	    					</div>
+	    					<div class="col-md">
+	    						<input type="text" name="Adresse"><br>	    	
+	    					</div>
+	    				</div>	
+	    				<div class="row mt-4">		
+	    					<div class="col-md-3">
+	    					 	<label for="Type">Type</label>
+	    					</div>
+	    					<div class="col-md">
+	    						<input type="text" name="Type">
+	    					</div>
+	    				</div>
+	    			</div>		    	
+				</form>
+			</div>
+	      </div>	    	   
+      </div>
+      </div>
+      <div class="modal-footer fvert">
+        <button type="button" class="btn btn-danger" class="boen">Annuler</button>
+        <button type="button" class="btn btn-primary" class="boen" data-bs-dismiss="modal">Enregistrer</button>
+      </div>
+    </div>           
+</div> 
+		 <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Supprimer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Voulez-vous vraiment supprimer cette ligne ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Oui</button>
+        <button type="button" class="btn btn-primary">Non</button>
+      </div>
+    </div>
+  </div>
+</div> 
+      <div class="entête">	    	
+	  <img src="Clinique/assets/img/logoc.jpg">
+      </div>
+      <div class="point2">
+      	<div class="baj">
+      		<h2>Tableau de bord</h2>	
+	    	<!-- <button class="btn btn-success" id="enr2" data-bs-toggle="modal" data-bs-target="#addfour">Ajouter</button> -->
+	    </div>	
+      </div>
+      <div class="point3"></div>
+      <div class="tableau">
+      	<table>
+      		<tr class="or">
+      		    <th>Fournisseurs</th>	
+      		</tr>
+      		<tr>      		
+      		    <th class="colonne">Nom</th>
+      		    <th class="colonne">Prénom</th>
+      		    <th class="colonne">Phone</th>
+      		    <th class="colonne">Adresse</th>
+      		    <th class="colonne">Type</th>
+      		    <th class="colonne">Actions</th>
+      		</tr>
+      		<tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+
+                  </tr>
+                  <tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+                  </tr>
+                  <tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+                  </tr>
+                  <tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+                  </tr>       
+		       <tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+                  </tr>        
+		      <tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+                  </tr>              
+                  <tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+                  </tr>
+                  <tr>		          
+                      <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+		      </tr>
+                  <tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+                  </tr>                 
+                   <tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+                  </tr>                   
+                   <tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+                  </tr>                   
+                   <tr>
+		          <td class="ligne">Traoré</td>
+		          <td class="ligne">Haby</td>
+		          <td class="ligne">(+223)76031410</td>
+		          <td class="ligne">traore@asm.ml</td>
+		          <td class="ligne">Remèdes</td>
+		          <td class="ligne"><a href="Fournisseursform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button></td>
+                  </tr> 
+      	</table>
+      </div>
+      <script src="Clinique/assets/bootstrap/bootstrap.min.js"></script>
+
+</body>
+</html>
