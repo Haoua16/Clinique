@@ -1,0 +1,96 @@
+body
+{
+    padding: 0%;
+    margin: 0%;
+}
+/* LA div contenant la couleur verte et jaune */
+.gauche
+{
+    width: 10%;
+    
+}
+
+/* La premiere div gauche verte */
+
+.firstgauche
+{
+    width: 100%;
+    height: 150px;
+    background-color: #279C4F; 
+    /* position: relative; */
+    /* top: 70px; */
+}
+/* :a div de la couleur bleue */
+.secondgauche
+{
+    width: 100%;
+    height:390px;
+    background-color: #047BF5;
+    /* position: relative; */
+    /* top: 80px; */
+}
+/* Div du Millieu */
+.millieu
+{
+    width: 90%;
+    position: relative;
+    left: 10%;
+    bottom: 540px;
+    /* background-color: aqua; */
+}
+/* Jouer sur le texte liste */
+.liste
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-top: 8px;
+}
+
+/* Jouer sur le boutton Ajouter */
+.ajout
+{
+    margin-top: 7px;    
+}
+/* Le logo */
+img
+{
+    width: 80px;
+    height: 80px;
+}
+
+/* jouer sur le premier div du millieu */
+.placement
+{
+    /* height: 50px; */
+    background-color: #279C4F;    
+}
+/* jouer sur le lable */
+.formulaire label
+{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* jouer sur le div de search */
+.tableau
+{
+    display: flex;
+
+}
+/* input type de search */
+.tableau input
+{
+  border-radius: 5px;
+  width: 300px;
+  position: relative;
+  top:30px;
+  left: 850px;
+}
+/* Tableau personnel */
+.persotable
+{
+    position: relative;
+    top: 55px;
+}
