@@ -1,0 +1,78 @@
+#hd{
+    background-color: #279C4F;
+    height: 20%;
+    display: flex;
+    
+}
+.rch {
+    color: aliceblue;
+    left: 300px;
+    position: relative;
+    bottom: -30px;
+}
+.logo{
+    display: flex;
+    position: relative;
+    right: 15%;
+}
+.ad{
+position: relative;
+left: 65%;
+top: 35%;
+}
+.sb{
+    background-color: #047BF5;
+    height: 95%;
+    width:9%;
+    position: relative;
+    /* left: 1px; */
+    top: 1px;
+}
+/* .tout
+{
+    display: flex;
+    width: 91%;
+    position: relative;
+    left: 120px;
+    bottom: 460px;
+    background-color: red;
+} */
+/* .h1{
+    left: 10%;
+    position: relative;
+    height: 50px;
+}
+.h1 h2{
+    text-align: center;
+} */
+.tdepart{
+    
+    position: relative;
+    bottom: 400px;
+    left: 65px;
+    /* border:  solid 3px #047BF5; */
+
+}
+
+.tableau
+{
+    position: relative;
+    bottom: 30px;
+    left: 65px;
+
+}
+label{
+    font-weight: bold;
+}
+.intb{
+    position: relative;
+    right: 140px;
+}
+/* .btn-group{
+    /* position: property; */
+    /* left: 83%;
+    top: 50%;
+} */
+body{
+    height: 500px;
+}
