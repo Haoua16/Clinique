@@ -1,0 +1,62 @@
+body
+{
+    margin:0%;
+    padding: 0%;
+    background-color: #047BF5;
+}
+
+/* donner du size au container */
+.bouger
+{
+    width: 50%;
+      /* background-color: aqua; */
+}
+/* Faire bouger le container vers le bas */
+
+.formulaire form
+{
+    position: relative;
+    top: 20px;
+}
+
+/* Div ajouter personnel */
+.personnel
+{
+    margin-top: 20px;
+    background-color: #279C4F;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* input type pour nom et prenom */
+.inprenom
+{
+    width: 178px;
+    /* border-radius: 2px; */
+    /* border: none; */
+    /* background-color: aqua; */
+}
+.formulaire
+{
+    height: 550px;
+    background-color: white;
+    position: relative;
+    bottom: 16px;
+}
+/* Pour rapprocher les bouttons */
+.proche
+{
+    margin-left: 200px;
+}
+/* Le size de tous les input */
+.inpsize
+{
+    width: 425px;
+}
+/* Le label */
+label
+{
+    font-size: 15px;
+    font-weight: bold;
+}

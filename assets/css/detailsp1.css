@@ -1,0 +1,111 @@
+html {
+    position: relative;
+    min-width: 1024px;
+    min-height: 600px;
+    height: 100%;
+}
+/* First div */
+.placement
+{
+    background-color: #279C4F;    
+}
+
+.gauche
+{
+    width: 5%;
+    
+}
+
+/* La premiere div gauche verte */
+
+.firstgauche
+{
+    width: 100%;
+    height: 150px;
+    background-color: #279C4F; 
+    /* position: relative; */
+    /* top: 70px; */
+}
+/* :a div de la couleur bleue */
+.secondgauche
+{
+    width: 100%;
+    height:430px;
+    background-color: #047BF5;
+}
+
+img
+{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 110px;
+    top: 100px;
+}
+/* Nom du patient */
+h5
+{
+    position: relative;
+    top: 90px;
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+.millieu
+{
+    width: 95%;
+    position: relative;
+    bottom: 540px;
+    left: 67px;
+    /* display: flex; */
+}
+.gauchem
+{
+    float: left;
+    /* background-color: aquamarine; */
+    border-right: 2px solid lightgray;
+    width: 30%;
+    height: 580px;
+    position: relative;
+    bottom: 40px;
+}
+
+.droitem
+{
+    float: right;
+    width: 70%;
+    /* background-color: violet; */
+}
+/* Div du avatar patient */
+.userfo
+{
+    /* border: yellowgreen 2px solid; */
+    height: 280px;
+}
+
+/*  */
+.phopro
+{
+    /* border: red 2px solid; */
+    position: relative;
+    top: 10px;  
+}
+/* le label et le p */
+
+label 
+{
+    font-weight: bold;
+}
+
+p
+{
+    font-weight: bold;
+}
+.tableau
+{
+ width: 890px;
+ position: relative;
+ /* border: #047BF5 2px solid; */
+
+}
