@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="Assets/Css/detailsp1.css">
 </head>
 <body>
+
+    <!-- Modal -->
+<div class="modal fade" id="voirconsul" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Liste des Consultations</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Oui</button>
+          <button type="button" class="btn btn-primary">Non</button>
+        </div>
+      </div>
+    </div>
+  </div> 
     <!-- First Div -->
     <div class="">
         <div class="container-fluid">
@@ -114,24 +133,24 @@
                                 <tr>
                                     <td>Consultation</th>
                                     <td>5</td>
-                                    <td><button type="button" class="btn btn-primary">Voir</button></td>
+                                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#voirconsul">Voir</button></td>
                                 </tr>
                                 <tr>
                                     <td>Examen</th>
                                     <td>2</td>
-                                    <td><button type="button" class="btn btn-primary">Voir</button></td>
+                                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#voirconsul">Voir</button></td>
                                 </tr>
     
                                 <tr>
                                     <td>Ordonnances</th>
                                     <td>4</td>
-                                    <td><button type="button" class="btn btn-primary">Voir</button></td>
+                                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#voirconsul">Voir</button></td>
                                 </tr>
     
                                 <tr>
                                     <td>Interventions</th>
                                     <td>1</td>
-                                    <td><button type="button" class="btn btn-primary">Voir</button></td>
+                                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#voirconsul">Voir</button></td>
                                 </tr>
                             </tbody>
                         </table>
