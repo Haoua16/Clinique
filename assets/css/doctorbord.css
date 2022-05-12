@@ -1,0 +1,181 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 320px;
+}
+
+.uls{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+ul{
+    background-color: #279C4F;
+    height: 60px;
+}
+
+.nav_items{
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.aa{
+    width: 60px; 
+    height: 700px;
+    position: relative;
+    bottom: 90px;
+   
+}
+
+.blanc{
+    position: relative;
+    bottom: 1300px;
+    width: 45%;
+    left: 320px;
+}
+
+.hautbas{
+    position: relative;
+    left: 45px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10%;
+    font-weight: bold;
+    cursor: pointer;
+
+    
+}
+
+.haut{
+    position: relative;
+    left: -1px;
+    background-color:#279C4F;
+}
+
+.bas{
+    position: relative;
+    left: -1px;
+    background-color:  #279c4f;;
+}
+
+.centrale{
+    position: relative;
+    left: 100px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10%;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+.moonn{
+    position: relative;
+    left: -100px;
+    background-color: #FF0000;
+
+}
+
+.noomm{
+    position: relative;
+    left: -1px;
+    background-color: #047BF5;
+}
+
+.oommn{
+    position: relative;
+    background-color: #FF0000;
+   
+}
+.container{
+    position: relative;
+    /* bottom: 680px; */
+    left: 70px;
+} 
+
+#search-box{
+    position: relative;
+    left: 300px;
+    bottom: 42px;
+}
+
+.boxxx{
+    position: relative;
+    top: 10px;
+}
+
+#box{
+    position: relative;
+    left: 250px;
+    bottom: 47px;
+}
+
+.sidedash{
+    position: relative;
+    bottom: 730px;
+    width: 220px;
+    height: 215px;
+}
+
+h4{
+    position: relative;
+    left: 20px;
+}
+
+.bott{
+    position: relative;
+    bottom: 750px;
+    width: 220px;
+    height: 450px;
+}
+
+.userr{
+    position: relative;
+    left: -10px;
+    bottom: 50px;
+   
+
+}
+
+.bienvn{
+    position: relative;
+    left: 85px;
+    top: 10px;
+    font-weight: bold;
+
+}
+
+.threeimg{
+    position: relative;
+    left: 85px;
+    bottom: 80px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.cht{
+    position: relative;
+    display: flex;
+    gap: 5px;
+    bottom: 90px;   
+}
+
+h3{
+    position: relative;
+    left: 15px;
+    top: 30px;
+    /* background-color: #FF0000; */
+    width: fit-content;
+    color: #fff;
+    border: 2px solid
+}
