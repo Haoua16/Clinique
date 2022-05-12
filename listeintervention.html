@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interventions</title>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/intervention.css">
+</head>
+<body>
+     <!-- Ajouter avec modal  ok un utre commentire -->
+
+     <div class="modal fade" id="adinter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #279C4F;">
+            <h5 class="modal-title" id="exampleModalLabel">Enregistrer une intervention</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+      <div class="modal-body">
+          <div class="ajint">
+            <form action="">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="name">Nom</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="">
+                  </div>
+
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="username">Prenom</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="username">
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="username">Type</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="username">
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="username">Date</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="date" name="" id="username">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger intb" data-bs-dismiss="modal" >Annuler</button>
+            <button type="button" class="btn btn-primary intb" >Enregistrer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Fin d'ajout -->
+
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Confirmer la suppression</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6> Voulez-vous vraiment supprimer cette ligne?</h6>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" >Oui</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Non</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- La premiere div contenant ajoter -->
+
+        <div class="ajouter">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+    
+              </div>
+              <div class="col">
+                <h4>Liste d'interventions</h4>
+              </div>
+              <div class="col">
+                <button class="btn btn-primary bajout"  data-bs-toggle="modal" data-bs-target="#adinter">Ajouter</button>
+              </div>
+            </div>
+          </div>
+            <!-- <button class="btn btn-primary bajout"  data-bs-toggle="modal" data-bs-target="#adinter">Ajouter</button> -->
+         </div>
+
+        <div class="gauche">
+            <div class="firstgauche">
+                <img src="assets/img/logo clin.jpeg" alt="" width="80px" height="80px" class="logoi"> 
+            </div>
+            
+            <div class="secondgauche">
+                <div class="sb">
+                    <img src="assets/img/inter5med.jpg" alt="" width="150px" height="100px"><br> <br>
+                      <img src="assets/img/Inter3med.jpg" alt="" width="150px" height="100px"><br> <br>
+                      <img src="Assets/img/inter4med.jpg" alt="" width="150px" height="100px">
+                  </div>
+               
+            </div>
+        </div>
+
+<div class="centre">
+    <form action="">
+        <input type="search" placeholder="rechercher">
+     </form>
+     <div class="container tdepart" >
+      <table class="table table-bordered">
+          <thead class="table-light">
+          <tr class="col-2">
+            <th class="col-2">Nom du patient</th>
+            <th class="col-3">Type d'Interventions</th>
+            <th class="col-3">Date</th>
+            <th colspan="2" class="col-3">Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr class="col-6">
+                <td>Oumou Touré</td>
+                <td>Chirurgie vasculaire</td>
+                <td>30/05/1990</td> 
+                <td>
+                  <button type="button" class="btn btn-success">Modifier</button>
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Supprimer
+                  </button>
+                </td>
+            </tr>
+              <tr>
+                <td>Ibrahim Camara</td>
+                <td>Chirurgie Infatile</td>
+                <td>25/05/2002</td>
+                <td>
+                  <button type="button" class="btn btn-success">Modifier</button>
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Supprimer
+                  </button>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>   
+<script src="assets/Javascript/bootstrap.min.js"></script>
+</body>
+</html>

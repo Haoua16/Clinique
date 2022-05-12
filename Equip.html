@@ -1,0 +1,161 @@
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Equipement</title>
+        <link rel="stylesheet" href="assets/css/Equip.css">
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    </head>
+    <body>
+
+   <!-- form depart -->
+   <div class="modal fade" id="adequip" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="exampleModalLabel">Enregistrer les données d'équipements</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    <div class="modal-body">
+        <div class="ajint">
+          <form action="">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <label for="name">Nom</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="" id="">
+                </div>
+  
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-3">
+                  <label for="username">Types</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="" id="username">
+                </div>
+              </div>
+  
+              <!-- <div class="row mt-4">
+                <div class="col-md-5">
+                  <label for="username">Prenom du personnel</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="" id="username">
+                </div>
+              </div> -->
+  
+              <div class="row mt-4">
+                <div class="col-md-3">
+                  <label for="username">Date</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="date" name="" id="username">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger intb" data-bs-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-primary intb" >Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- fin form depart -->
+
+
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Confirmer la suppression</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6> Voulez-vous vraiment supprimer cette ligne?</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" >Oui</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Non</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        <header id="hd">
+            <div class="logo">
+                <img src="assets/img/logo clin.jpeg" alt="" width="120px" height="120px">
+            </div>  
+
+            <div class="">
+              <button class="btn btn-primary ajt" data-bs-toggle="modal" data-bs-target="#adequip">Ajouter</button>
+            </div>
+
+            <div class="Eq">
+              <h1> Equipements</h1>
+            </div>
+            <div>
+            <img class="img" src="assets/img/equip.jpg" alt="" height="100%" width="200%">
+            </div>
+            <div class="sb">
+              
+            </div>
+            <!-- <div class="st"></div> -->
+          <div class="body"></div>
+            <!-- <input type="text" id="Recherche" placeholder="Recherche"> -->
+        </header>
+        <div class="container tdepart">
+            <table class="table table-bordered tab" style="width: 800px;">
+                <thead class="table-light">
+                <tr>
+                  <th>Nom d'equipement</th>
+                  <th>Type</th>
+                  <th>Date</th>
+                  <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>Stethoscope</td>
+                      <td>Materiel d'ausculation</td>
+                      <td>12/03/2022</td> 
+                      <td>
+                        <button type="button" class="btn btn-success">Modifier</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Supprimer
+                        </button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Thermometre</td>
+                      <td>Chirurgie Infatile</td>
+                      <td>25/05/2002</td>
+                      <td>
+                        <button type="button" class="btn btn-success">Modifier</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Supprimer
+                        </button>
+                      </td>
+                      <!-- <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                       </div> -->
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>   
+    </div>
+    <script src="assets/Javascript/bootstrap.min.js"></script>
+    </body>
+    </html>
+</html>

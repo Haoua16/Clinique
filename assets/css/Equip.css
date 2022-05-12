@@ -1,0 +1,52 @@
+#hd{
+    background-color:#279C4F ;
+    height: 20%;
+    display: flex;
+    
+}
+.ajt{
+    /* background-color:#047BF5; */
+    position: relative;
+    left: 1000px;
+    top: 35%;
+    color: aliceblue;
+    }
+    .Eq{
+        color:white ;
+        position: relative;
+        top: 20%;
+        left: 20%;
+    }
+    .sb{
+        background-color: #047BF5;
+        width:120px;
+        height: 460px;
+        position: relative;
+        top: 115px;
+        right: 722px;
+    }
+    .img{
+        position: relative;
+        top: 120%;
+        right:10%;
+    }
+    .tdepart{
+        position: relative;
+        top: 30%;
+        left: 70px;
+        width: 350px;
+        
+    }
+    label{
+        font-weight: bold;
+    }
+    /* move table */
+.tab{
+    position: relative;
+    left: 150px;
+}
+
+    .intb{
+        position: relative;
+        right: 140px;
+    }
