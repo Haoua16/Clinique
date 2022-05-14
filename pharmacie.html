@@ -11,9 +11,66 @@
 </head>
 <body>
 
+  <!-- modal pour ajouter une pharmacie -->
+  <div class="modal fade" id="addfor" tabindex="-1" aria-labelledby="addfor" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="addfor">Enregistrer une pharmacie</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="addd">
+            <form action="">
+              <div class="containter">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="number">Numéro</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="number" name="" id="number">
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="">Etat</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="etat">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="name">Emplacement</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="emplacement">
+                  </div>
+                </div>             
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="Date">Date</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="date" name="" id="Date">
+                  </div>
+                </div>
+              </div>
+          
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger ajoutb" >Annuler</button>
+          <button type="button" class="btn btn-primary ajoutb" data-bs-dismiss="modal">Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
   
-  <!-- Modal -->
+  <!-- Modal pour la suppression -->
   <div class="modal fade" id="supp" tabindex="-1" aria-labelledby="supp" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -43,7 +100,7 @@
           <li class="nav_items">Anw Ko keneya</li>
         
           <li>
-            <button type="button" class="btn btn-success">Ajouter</button>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addfor">Ajouter</button>
           </li>
             
         </ul>
