@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <script src="assets/Javascript/bootstrap.min.js" defer></script>
+    <script src="assets/Javascript/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Page de conexion</title>
+</head>
+<body style="background-image: url(assets/img/production-9742765.jpg); background-size: cover; background-repeat: no-repeat;">
+    
+    <div class="gauche" style="background-color: #279C4F; opacity: 95%; width: 40%; height: 700px;">
+        <img src="assets/img/logo.jpeg" alt="" width="100px" height="100px">
+        <h3 class="depl">Bienvenue sur la page d'authentification</h3> <br><br><br>
+        <h6 class="depl">Merci de vous connecter pour acceder à votre compte</h6><br><br><br>
+        <h5 class="depl btn btn-danger" type="button" onclick="location.href='password.html'" >Mot de passe oublier ?</h5>
+    </div>
+    <div class="droite" style=" width: 50%; height: 600px;">
+        <div class="form-box">
+            <h1>
+                Connectez-vous
+            </h1>
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" id="" placeholder="Email">
+            </div>
+    
+            <div class="input-box">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="email" id="myInput" placeholder="Password">
+                <span class="eye" onclick="myFunction()">
+                    <i id="hide1" class="fa-solid fa-eye"></i>
+                    <i id="hide2" class="fa-solid fa-eye-slash"></i>
+                </span>
+            </div>
+    
+            <button type="button" class="login-btn">Connexion</button>
+        </div>
+
+        <script>
+            function myFunction(){
+                var x = document.getElementById("myInput");
+                var y = document.getElementById("hide1");
+                var z = document.getElementById("hide2");
+    
+                if(x.type === "password"){
+                    x.type="text";
+                    y.style.display='block';
+                    z.style.display="none";
+    
+                    }
+                    else{
+                        x.type="password";
+                        y.style.display='none';
+                        z.style.display="block";
+    
+                }
+                
+    
+                }
+    
+            
+        </script>
+</body>
+</html>
