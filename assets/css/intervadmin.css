@@ -1,0 +1,91 @@
+.ajouter
+{
+    background-color: #279C4F;
+    height: 50px;
+}
+h4{
+color: white;
+margin-top: 10px;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.gauche
+{
+    padding: 0%;
+    width: 20%;
+    position: relative;
+    /* bottom: 10px; */
+    /* background-color: blue; */
+}
+
+.firstgauche
+{
+    /* display: flex;    */
+    background-color: #279C4F;
+    height: 115px;
+    width: 150px;
+}
+.sb
+{
+    position: relative;
+    top: 22px;
+}
+
+.secondgauche
+{
+    float: left;
+    width: 150px;
+    height:450px;
+    background-color: #047BF5;
+}
+.bajout
+{
+  position: relative;
+  left: 90%;
+  top: 6px;
+}
+.logoi
+{
+    position: relative;
+    bottom: 50px;
+    /* left: 25px; */
+}
+label{
+    font-weight: bold;
+}
+
+
+
+.centre
+{
+    display: flex;
+    width: 80%;
+    position: relative;
+    bottom: 60px;
+    left: 100px;
+}   
+.centre input
+{
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+    border: solid 2px black;
+} 
+.tdepart
+{
+    position: relative;
+    top: 30px;
+    right: 250px;
+}
+.end{
+    background-color: #047BF5;
+    width: 200px;
+}
+.intb{
+    position: relative;
+    right: 140px;
+}
