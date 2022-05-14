@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="Clinique/assets/css/Ordonnancetable.css">
-	<link rel="stylesheet" type="text/css" href="Clinique/assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/Ordonnancetable.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/bootstrap.min.css">
 	<title>Table_Ordonnance</title>
 </head>
 <body>
@@ -62,9 +62,21 @@
       	  </form>
       	</div>       
       </div>
-      <div class="modal-footer fvert">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
-        <button type="button" class="btn btn-primary">Enregistrer</button>
+      <div class="modal-footer ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+
+				</div>
+					<div class="col-md-3">
+					<button type="button" class="btn btn-danger" class="boen">Annuler</button>
+				  </div>
+				<div class="col">
+				  <button type="button" class="btn btn-primary" class="boen" data-bs-dismiss="modal">Enregistrer</button>
+
+				</div>
+			</div>
+		</div>
       </div>
     </div>
   </div>
@@ -77,7 +89,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Supprimer</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Confirmer la suppression</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -91,12 +103,16 @@
   </div>
 </div> 
       <div class="entête">	    	
-	  <img src="Clinique/assets/img/logoc.jpg">
+	  <img src="assets/img/logoc.jpg">
       </div>
       <div class="point2">
       	<div class="baj">
       	<h2>Tableau de bord</h2>	
-	    	<a href="Ordonnanceform.html" class="btn btn-success" id="enr2" data-bs-toggle="modal" data-bs-target="#addord">Ajouter</a></button>
+<<<<<<< HEAD
+	    	<a href="" class="btn btn-success" id="enr2" data-bs-toggle="modal" data-bs-target="#addord">Ajouter</a></button>
+=======
+	    	<a class="btn btn-success" id="enr2" data-bs-toggle="modal" data-bs-target="#addord">Ajouter</a></button>
+>>>>>>> 3740567b132a14f071f215251916bd6d81908047
 	    	</div>	
       </div>
       <div class="point3"></div>
@@ -117,7 +133,7 @@
 		          <td class="ligne">Flucidine</td>
 		          <td class="ligne">001</td>
 		          <td class="ligne">14/04/2022</td>
-		          <td class="ligne"><a href="Ordonnanceform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -127,7 +143,7 @@
 		          <td class="ligne">Doliprane</td>
 		          <td class="ligne">002</td>
 		          <td class="ligne">14/04/2022</td>
-		          <td class="ligne"><a href="Ordonnanceform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -137,7 +153,7 @@
 		          <td class="ligne">Cimetidine</td>
 		          <td class="ligne">003</td>
 		          <td class="ligne">20/04/2022</td>
-		          <td class="ligne"><a href="Ordonnanceform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -147,7 +163,7 @@
 		          <td class="ligne">Rhinathiol</td>
 		          <td class="ligne">004</td>
 		          <td class="ligne">05/06/2022</td>
-		          <td class="ligne"><a href="Médicamentform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -157,7 +173,7 @@
 		          <td class="ligne">Flucidine</td>
 		          <td class="ligne">005</td>
 		          <td class="ligne">08/06/2022</td>
-		          <td class="ligne"><a href="Ordonnanceform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -167,7 +183,7 @@
 		          <td class="ligne">Flucidine</td>
 		          <td class="ligne">006</td>
 		          <td class="ligne">10/06/2022</td>
-		          <td class="ligne"><a href="Ordonnanceform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a  class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -177,7 +193,7 @@
 		          <td class="ligne">Flucidine</td>
 		          <td class="ligne">007</td>
 		          <td class="ligne">10/06/2022</td>
-		          <td class="ligne"><a href="Ordonnanceform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a  class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -187,7 +203,7 @@
 		          <td class="ligne">Flucidine</td>
 		          <td class="ligne">008</td>
 		          <td class="ligne">14/6/2022</td>
-		          <td class="ligne"><a href="Ordonnanceform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -197,7 +213,7 @@
 		          <td class="ligne">Flucidine</td>
 		          <td class="ligne">009</td>
 		          <td class="ligne">14/04/2022</td>
-		          <td class="ligne"><a href="Ordonnanceform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -207,7 +223,7 @@
 		          <td class="ligne">Flucidine</td>
 		          <td class="ligne">010</td>
 		          <td class="ligne">14/04/2022</td>
-		          <td class="ligne"><a href="Ordonnanceform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -217,14 +233,18 @@
 		          <td class="ligne">Flucidine</td>
 		          <td class="ligne">011</td>
 		          <td class="ligne">14/04/2022</td>
-		          <td class="ligne"><a href="Ordonnanceform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne"><a class="btn btn-success" id="enr3">Modifier</a>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
                   </tr>
       	</table>
       </div>
-      <script src="Clinique/assets/bootstrap.min.js"></script>
+<<<<<<< HEAD
+      <script src="assets/Javascript/bootstrap.min.js"></script>
+=======
+      <script src="assets/bootstrap.min.js"></script>
+>>>>>>> 3740567b132a14f071f215251916bd6d81908047
 
 </body>
 </html>
