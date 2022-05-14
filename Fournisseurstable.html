@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="Clinique/assets/css/Fournisseurstable.css">
-	<link rel="stylesheet" type="text/css" href="Clinique/assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/Fournisseurstable.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/bootstrap.min.css">
 	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.js">
  -->	<title>Table_Fournisseurs</title>
 </head>
@@ -14,67 +14,81 @@
 
 <!-- Modal -->
 <div class="modal fade" id="addfour" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Ajouter Fournisseurs</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-         <div class="leformulaire">
-	    		<div class="formul1">	    		      
-	    			<form>
-	    			<div class="container">
-	    				<div class="row">
-	    					<div class="col-md-3">
-	    					      <label for="Nom">Nom</label>
-	    					</div>	
-	    					<div class="col-md">
-	    						<input type="text" name="Nom"><br>
-	    					</div>
-	    				</div>
-	    				<div class="row mt-3">	
-	    					<div class="col-md-3">
-	    					<label for="Phone">Phone</label>
-	    					</div>
-	    					<div class="col-md">
-	    						<input type="text" name="Phone"><br>
-	    					</div>
-	    				</div>
-	    				<div class="row mt-4">		
-	    					<div class="col-md-3">
-	    					<label for="Prénom">Prénom</label>
-	    					</div>
-	    					<div class="col-md">
-	    						<input type="text" name="Prénom"><br>
-	    					</div>
-	    				</div>
-	    				<div class="row mt-4">		
-	    					<div class="col-md-3">
-	    					      <label for="Adresse">Adresse</label>
-	    					</div>
-	    					<div class="col-md">
-	    						<input type="text" name="Adresse"><br>	    	
-	    					</div>
-	    				</div>	
-	    				<div class="row mt-4">		
-	    					<div class="col-md-3">
-	    					 	<label for="Type">Type</label>
-	    					</div>
-	    					<div class="col-md">
-	    						<input type="text" name="Type">
-	    					</div>
-	    				</div>
-	    			</div>		    	
-				</form>
-			</div>
-	      </div>	    	   
-      </div>
-      </div>
-      <div class="modal-footer fvert">
-        <button type="button" class="btn btn-danger" class="boen">Annuler</button>
-        <button type="button" class="btn btn-primary" class="boen" data-bs-dismiss="modal">Enregistrer</button>
-      </div>
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h5 class="modal-title" id="exampleModalLabel">Ajouter Fournisseurs</h5>
+        			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      		</div>
+      		<div class="modal-body">
+        		<div class="leformulaire">
+	    			<div class="formul1">	    		      
+	    				<form>
+	    					<div class="container">
+	    						<div class="row">
+	    							<div class="col-md-3">
+	    					      		<label for="Nom">Nom</label>
+	    							</div>	
+	    							<div class="col-md">
+	    								<input type="text" name="Nom"><br>
+	    							</div>
+	    						</div>
+	    						<div class="row mt-3">	
+	    							<div class="col-md-3">
+	    								<label for="Phone">Phone</label>
+	    							</div>
+	    							<div class="col-md">
+	    								<input type="text" name="Phone"><br>
+	    							</div>
+	    						</div>
+	    						<div class="row mt-4">		
+	    							<div class="col-md-3">
+	    								<label for="Prénom">Prénom</label>
+	    							</div>
+	    							<div class="col-md">
+	    								<input type="text" name="Prénom"><br>
+	    							</div>
+	    						</div>
+	    						<div class="row mt-4">		
+	    							<div class="col-md-3">
+	    					      		<label for="Adresse">Adresse</label>
+	    							</div>
+	    							<div class="col-md">
+	    								<input type="text" name="Adresse"><br>	    	
+	    							</div>
+	    						</div>	
+	    						<div class="row mt-4">		
+	    							<div class="col-md-3">
+	    					 			<label for="Type">Type</label>
+	    							</div>
+	    							<div class="col-md">
+	    								<input type="text" name="Type">
+	    							</div>
+	    						</div>
+	    					</div>		    	
+						</form>
+					</div>
+	      		</div>	    	   
+      		</div>
+      
+      		<div class="modal-footer">
+				  <div class="container">
+					  <div class="row">
+						  <div class="col-md-3">
+
+						  </div>
+						  	<div class="col-md-3">
+							  <button type="button" class="btn btn-danger" class="boen">Annuler</button>
+							</div>
+						  <div class="col">
+							<button type="button" class="btn btn-primary" class="boen" data-bs-dismiss="modal">Enregistrer</button>
+
+						  </div>
+					  </div>
+				  </div>
+        		
+     		</div>
+		</div>
     </div>           
 </div> 
 		 <!-- Button trigger modal -->
@@ -84,7 +98,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Supprimer</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Confirmer la supprression</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -98,12 +112,12 @@
   </div>
 </div> 
       <div class="entête">	    	
-	  <img src="Clinique/assets/img/logoc.jpg">
+	  <img src="assets/img/logoc.jpg">
       </div>
       <div class="point2">
       	<div class="baj">
       		<h2>Tableau de bord</h2>	
-	    	<!-- <button class="btn btn-success" id="enr2" data-bs-toggle="modal" data-bs-target="#addfour">Ajouter</button> -->
+	    	<button class="btn btn-success" id="enr2" data-bs-toggle="modal" data-bs-target="#addfour">Ajouter</button>
 	    </div>	
       </div>
       <div class="point3"></div>
@@ -255,7 +269,7 @@
                   </tr> 
       	</table>
       </div>
-      <script src="Clinique/assets/bootstrap/bootstrap.min.js"></script>
+      <script src="assets/Javascript/bootstrap.min.js"></script>
 
 </body>
 </html>
