@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/paiement.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <title>Liste de Paiement</title>
+</head>
+<body>
+  
+<!-- modal pour ajouter un paiement -->
+  <div class="modal fade" id="addform" tabindex="-1" aria-labelledby="addform" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="addform">Enregistrer un paiement</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="addd">
+            <form action="">
+              <div class="containter">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="number">Numéro</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="number" name="" id="number">
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="">Motif</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="motif">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="name">Nom</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="name">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="username">Prénom</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="username">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="">Prix</label>
+                  </div>
+                  <div class="col">
+                    <input type="varchar" name="" id="number">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="Date">Date</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="date" name="" id="Date">
+                  </div>
+                </div>
+              </div>
+          
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger ajoutb" >Annuler</button>
+          <button type="button" class="btn btn-primary ajoutb" data-bs-dismiss="modal">Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- modal pour generer le reçu du paiement -->
+
+  <div class="modal fade" id="sup1" tabindex="-1" aria-labelledby="sup1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="width: 900px;right: 200px;">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="sup1">Réçcu de paiement</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="container-fluid">
+                <div class="tableinfos">
+                  <table class="table table-sptiped table-bordered persotable">
+                    <thead class="thead-striped table-light">
+                      <tr>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Numéro</th>
+                        <th scope="col-md-2">Email</th>
+                        <th scope="col-md-2">Civilité</th>
+                        <th scope="col-md-2">Age</th>
+                        <th scope="col">Type</th>
+                        <th scope="col-md-2">Date</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Diarra</th>
+                        <td>Moussa</td>
+                        <td>74 18 30 22</td>
+                        <td>Moussadiara@gmail.com</td>
+                        <td>Monsieur</td>
+                        <td>32 ans</td>
+                        <td>Chirirgie</td>
+                        <td>01/04/2022</td>                    
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" >Partager</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Imprimer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- modal pour generer le reçu du paiement -->
+  <div class="modal fade" id="sup2" tabindex="-1" aria-labelledby="sup2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="width: 900px;right: 200px;">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="sup2">Reçu de paiement</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="container-fluid">
+                <div class="tableinfos">
+                  <table class="table table-sptiped table-bordered persotable">
+                    <thead class="thead-striped table-light">
+                      <tr>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Numéro</th>
+                        <th scope="col-md-2">Email</th>
+                        <th scope="col-md-2">Civilité</th>
+                        <th scope="col-md-2">Age</th>
+                        <th scope="col">Type</th>
+                        <th scope="col-md-2">Date</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Diaby</th>
+                        <td>Maria</td>
+                        <td>78 02 03 14</td>
+                        <td>Mariadiaby10@gmail.com</td>
+                        <td>Madame</td>
+                        <td>20 ans</td>
+                        <td>Bilan Sanguin</td>
+                        <td>05/04/2022</td>                    
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" >Partager</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Imprimer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Modal pour la suppression -->
+  <div class="modal fade" id="supp" tabindex="-1" aria-labelledby="supp" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="supp">Supprimer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Voulez-vous vraiment Supprimer cette ligne ?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" >Oui</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Nom</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+    <div class="firstnav">
+              
+        <nav>
+          
+            <ul class="uls flex">
+                
+                <li class="nav_items">Anw Ko keneya</li>
+              
+                <li>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addform">Ajouter</button>
+                </li>
+                
+            </ul>
+            <input type="text" id="search-box" name="Rechercher" placeholder="Rechercher" class="box">
+        </nav>
+  
+      </div>
+  
+      
+      <div style="background-color: #279C4F;" class="aa">
+          <img src="assets/img/logo.jpeg" width="60px" height="60px">
+      </div>
+  
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center">La liste de paiement</h2>
+          </div>
+        </div>
+        
+      </div>
+  
+  
+      <div class="container">
+  
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Nom</th>
+              <th scope="col">Prénom</th>
+              <th scope="col">Email</th>
+              <th scope="col">Motif</th>
+              <th scope="col">Prix</th>
+              <th scope="col">Date</th>
+              <th scope="col">Actions</th>
+              <th colspan="2">Détails</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Diarra</td>
+              <td>Moussa</td>
+              <td>Moussadiara@gmail.com</td>
+              <td>Chirurgie Vasculaire</td>
+              <td>100 000 Franc Cfa</td>
+              <td>28 Février 2022</td>
+              <td class="button">
+                <button type="button" class="btn btn-success">Modifier</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#supp">
+                  Supprimer
+                </button>              
+              </td>
+              <td>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sup1">
+                  Generer
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Diaby</td>
+              <td>Maria</td>             
+              <td>Mariadiaby10@gmail.com</td>
+              <td>Oreillons</td>             
+              <td>75 000 Franc Cfa</td>
+              <td>26 Mars 2022</td>
+              <td class="button">
+                <button type="button" class="btn btn-success">Modifier</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#supp">
+                  Supprimer
+                </button>              
+              </td>
+              <td>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sup2">
+                  Generer
+                </button>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      <script src="assets/Javascript/bootstrap.min.js"></script>
+</body>
+</html>
