@@ -1,0 +1,60 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 20px;
+    padding: 10px;   
+    
+  }
+  .tabl
+  {
+    position: relative;
+    bottom: 450px;
+  }
+.titre
+{
+  /* background-color: aqua; */
+  position: relative;
+  bottom: 460px; 
+}
+  .topp{
+    background-color: rgba(42, 165, 67, 0.824);
+    height: 50px;
+    display: flex;
+  }
+  .bleu
+  {
+    background-color: blue;
+    width: 70px;
+    height: 520px;
+  }
+
+  table{
+    position: relative;
+    left: 160px;
+    margin-top: 20px;
+  }
+  h4{
+    text-align: center;
+    margin-right: 35%;
+    position: relative;
+    margin-top: -40px;
+  }
+  .trait{
+    margin-left: 237px;
+    width: 532px;
+    height: 5px;
+    font-weight: bold;
+    background-color: black;
+    position: relative;
+    margin-top: 15px;
+  }
+ 
+  img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .bij{
+    margin-top: 8px;
+  }
+  

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/img.jpeg" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/figma.css">
+</head>
+<body>
+
+<!-- suppression de ligne -->
+
+    <!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279c4f;">
+          <h5 class="modal-title" id="exampleModalLabel">Confirmer la suppression</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Voulez-vous vraiment supprimer cette ligne?</h6>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" >Oui</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Non</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- fin -->
+
+<!-- Ajouter patient -->
+
+<div class="modal fade" id="ajoupatient" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279c4f;">
+          <h5 class="modal-title" id="exampleModalLabel">Ajouter un patient</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="">Nom</label>
+                    </div>
+                    <div class="col">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Prénom</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Phone</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Civilité</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Age</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Assurance</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+            </form>    
+         </div>
+        </div>
+        <div class="modal-footer center">
+          <button type="button" style="margin-right: 110px;" class="btn btn-danger">Annuler</button>
+          <button type="button" style="margin-right: 80px;" class="btn btn-primary" data-bs-dismiss="modal">Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- Fin d'ajout -->
+
+    <div class="topp">
+        <img src="Assets/img/img.jpeg">
+        <div class="container">
+            <div class="row bij">
+                <div class="col-md-10">
+                    <input type="search" placeholder="Rechercher">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ajoupatient">Ajouter</button>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="bleu"> 
+    </div>
+
+    <div class="titre">
+        <h4>La Liste des patients</h4>
+        <div class="trait">
+        </div>  
+    </div>
+    <table CELLPADDING="2" CELLSPACING="2" WIDTH="80%" class="tabcenter table-bordered tabl">
+        <tr>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>E-mail</th>
+            <th>Phone</th>
+            <th>Civilité</th>
+            <th>Age</th>
+            <th>Assurance</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Touré</td>
+            <td>Oumou</td>
+            <td>toureoum@gmail.com</td>
+            <td>74 18 30 22</td>
+            <td>Madame</td>
+            <td>32 ans</td>
+            <td>Amo</td>
+            <td>
+                <button class="btn btn-success">Modifier</button>
+                <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer</button>
+            </td>
+           
+        </tr>
+        <tr>
+            <td>Camara</td>
+            <td>Ibrahim</td>
+            <td>camaraiba@gmail.com</td>
+            <td>78 02 03 14</td>
+            <td>Monsieur</td>
+            <td>20 ans</td>
+            <td>Lafia</td>
+            <td>
+                <button class="btn btn-success">Modifier</button>
+                <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Diarra</td>
+            <td>Moussa</td>
+            <td>moussadiara@gmail.com</td>
+            <td>66 34 58 66</td>
+            <td>Monsieur</td>
+            <td>39 ans</td>
+            <td>Bleu</td>
+            <td>
+                <button class="btn btn-success">Modifier</button>
+                <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer</button>
+            </td>
+        </tr>
+       
+        <tr>
+            <td>Diaby</td>
+            <td>Maria</td>
+            <td>Mariadiaby10@gmail.com</td>
+            <td>62 25 46 66</td>
+            <td>Madame</td>
+            <td>20 ans</td>
+            <td>Amo</td>
+            <td>
+                <button class="btn btn-success">Modifier</button>
+                <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer</button>
+            </td>
+        </tr>
+    </table>
+<script src="Assets/javascript/bootstrap.min.js"></script>   
+</body>
+</html>
