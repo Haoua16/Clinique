@@ -49,13 +49,13 @@
     height: 80px;
     bottom: 0px;
 }
-.table{
+ .table1{
     position: relative;
-    margin-left: 180px;
-    top: 120px;
+    left: 180px;
+    top: 50px;
         
 
-}
+} 
 .titre{
     position: relative;
     text-align: center;
