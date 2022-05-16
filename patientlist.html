@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/patientlist.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <title>Liste de Patient</title>
+</head>
+<body>
+  
+
+  <div class="modal fade" id="addform" tabindex="-1" aria-labelledby="addform" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="addform">Enregistrer un paiement</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="addd">
+            <form action="">
+              <div class="containter">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="name">Nom</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="name">
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="username">Prénom</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="username">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="email" name="" id="email">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="number">Numéro de téléphone</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="varchar" name="" id="number">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="">Civilité</label>
+                  </div>
+                  <div class="col">
+                    <input type="text" name="" id="">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="birth">Age</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="date" name="" id="birth">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                      <label for="assurance">Assurance</label>
+                    </div>
+                    <div class="col-md-3">
+                      <input type="text" name="" id="assurance">
+                    </div>
+                  </div>
+              </div>
+          
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger ajoutb" >Annuler</button>
+          <button type="button" class="btn btn-primary ajoutb" data-bs-dismiss="modal">Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Modal pour la suppression -->
+  <div class="modal fade" id="supp" tabindex="-1" aria-labelledby="supp" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="supp">Supprimer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Voulez-vous vraiment Supprimer cette ligne ?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" >Oui</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Nom</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+    <div class="firstnav">
+              
+        <nav>
+          
+            <ul class="uls flex">
+                
+                <li class="nav_items">Anw Ko keneya</li>
+              
+            </ul>
+            <input type="text" id="search-box" name="Rechercher" placeholder="Rechercher" class="box">
+        </nav>
+  
+      </div>
+  
+      
+      <div style="background-color: #279C4F;" class="aa">
+          <img src="assets/img/logo.jpeg" width="60px" height="60px">
+      </div>
+  
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center">Liste de Patient</h2>
+          </div>
+        </div>
+        
+      </div>
+  
+  
+      <div class="container">
+  
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Nom</th>
+              <th scope="col">Prénom</th>
+              <th scope="col">Email</th>
+              <th scope="col">Numéro de téléphone</th>
+              <th scope="col">Civilité</th>
+              <th scope="col">Age</th>
+              <th scope="col">Assurance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Toure</th>
+              <td>Oumou</td>
+              <td>toureoum24@gmail.com</td>
+              <td>74 18 30 22</td>
+              <td>Madame</td>
+              <td>32 ans</td>
+              <td>AMO</td>
+            </tr>
+            <tr>
+                <th scope="row">Camara</th>
+                <td>Ibrahim</td>
+                <td>Camaraiba@gmail.com</td>
+                <td>78 02 03 14</td>
+                <td>Monsieur</td>
+                <td>20 ans</td>
+                <td>LAFIA</td>
+            </tr>
+            <tr>
+                <th scope="row">Diarra</th>
+                <td>Moussa</td>
+                <td>Moussadiara@gmail.com</td>
+                <td>66 34 58 66</td>
+                <td>Monsieur</td>
+                <td>39 ans</td>
+                <td>BLEUE</td>
+            </tr>
+            <tr>
+                <th scope="row">Diaby</th>
+                <td>Maria</td>
+                <td>Mariadiaby10@gmail.com</td>
+                <td>62 25 46 66</td>
+                <td>Madame</td>
+                <td>42 ans</td>
+                <td>AMO</td>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      <script src="assets/Javascript/bootstrap.min.js"></script>
+</body>
+</html>

@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo clin.jpeg" type="image/x-icon">
     <title>Interventions</title>
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/intervention.css">
 </head>
 <body>
+
+  
      <!-- Ajouter avec modal  ok un utre commentire -->
 
      <div class="modal fade" id="adinter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -70,9 +73,6 @@
     </div>
      <!-- Fin d'ajout -->
 
-
-
-
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -90,6 +90,86 @@
       </div>
     </div>
   </div>
+
+  
+<!-- deput print -->
+<div class="modal fade" id="printl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#279C4F;">
+        <h5 class="modal-title" id="exampleModalLabel" >Confirmer l'impression</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container tdepart" style="right: 10px; width: 500px;">
+          <table class="table table-bordered" >
+              <thead class="table-light">
+              <tr class="col-2">
+                <th class="col-2">Nom du patient</th>
+                <th class="col-2">Prenom du patient</th>
+                <th class="col-3">Type d'Interventions</th>
+                <th class="col-2">Date</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr class="col-6">
+                    <td> Touré</td>
+                    <td>Oumou </td>
+                    <td>Chirurgie vasculaire</td>
+                    <td>30/05/1990</td> 
+                </tr>
+              </tbody>      
+         </table>           
+         </div>             
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" >Oui</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Non</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="print2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#279C4F;">
+        <h5 class="modal-title" id="exampleModalLabel" >Confirmer l'impression</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container tdepart" style="right: 10px; width: 500px;">
+          <table class="table table-bordered" >
+              <thead class="table-light">
+              <tr class="col-2">
+                <th class="col-2">Nom du patient</th>
+                <th class="col-2">Prenom du patient</th>
+                <th class="col-3">Type d'Interventions</th>
+                <th class="col-2">Date</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr class="col-6">
+                    <td> Camara</td>
+                    <td>Ibrahim</td>
+                    <td>Chirurgie Infatile</td>
+                    <td>05/05/2002</td> 
+                </tr>
+              </tbody>      
+         </table>           
+         </div>             
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" >Oui</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Non</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin de print -->
+
     <!-- La premiere div contenant ajoter -->
 
         <div class="ajouter">
@@ -129,36 +209,41 @@
         <input type="search" placeholder="rechercher">
      </form>
      <div class="container tdepart" >
-      <table class="table table-bordered">
+      <table class="table table-bordered" style="width: 1000px;">
           <thead class="table-light">
           <tr class="col-2">
             <th class="col-2">Nom du patient</th>
+            <th class="col-2">Prenom du patient</th>
             <th class="col-3">Type d'Interventions</th>
-            <th class="col-3">Date</th>
-            <th colspan="2" class="col-3">Actions</th>
+            <th class="col-1">Date</th>
+            <th colspan="2" class="col-6">Actions</th>
           </tr>
           </thead>
           <tbody>
             <tr class="col-6">
-                <td>Oumou Touré</td>
+                <td> Touré</td>
+                <td>Oumou </td>
                 <td>Chirurgie vasculaire</td>
                 <td>30/05/1990</td> 
                 <td>
                   <button type="button" class="btn btn-success">Modifier</button>
                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Supprimer
-                  </button>
+                    Supprimer </button>
+                    <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#printl">Imprimer</button>
+                 
                 </td>
             </tr>
               <tr>
-                <td>Ibrahim Camara</td>
+                <td> Camara</td>
+                <td>Ibrahim </td>
                 <td>Chirurgie Infatile</td>
                 <td>25/05/2002</td>
                 <td>
                   <button type="button" class="btn btn-success">Modifier</button>
                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Supprimer
-                  </button>
+                    Supprimer</button>
+                    <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#print2">Imprimer</button>
+                  
                 </td>
               </tr>
           </tbody>

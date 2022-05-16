@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="Clinique/assets/css/Sallestable.css">
-	<link rel="stylesheet" type="text/css" href="Clinique/assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/Sallestable.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/bootstrap.min.css">
+	<link rel="shortcut icon" href="assets/img/logo.jpeg" type="image/x-icon">
 	<title>Table_Salles</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Ajouter un fournisseur</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Ajouter une salle</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -70,9 +71,20 @@
       	  </form>
       	</div>       
       </div>
-      <div class="modal-footer fvert">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
-        <button type="button" class="btn btn-primary">Enregistrer</button>
+      <div class="modal-footer">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-md-3">
+
+				  </div>
+				  <div class="col-md-3">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+				  </div>
+				  <div class="col">
+					<button type="button" class="btn btn-primary">Enregistrer</button>
+				  </div>
+			  </div>
+		  </div>
       </div>
     </div>
   </div>
@@ -87,7 +99,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Supprimer</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Confirmer la suppression</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -101,13 +113,13 @@
   </div>
 </div> 
       <div class="entête">	    	
-	  <img src="Clinique/assets/img/logoc.jpg">
+	  <img src="assets/img/logoc.jpg">
       </div>
       <div class="point2">
       	<div class="baj">
-            <h2>Tableau de bord</h2>	
-	    	<a href="Sallesform.html" class="btn btn-success" id="enr2" data-bs-toggle="modal" data-bs-target="#addsalles">Ajouter</a></button>
-	    	</div>	
+            <h2>Tableau de bord</h2>
+			<button class="btn btn-success" id="enr2" data-bs-toggle="modal" data-bs-target="#addsalles">Ajouter</button>	
+	    </div>	
       </div>
       <div class="point3"></div>
       <div class="tableau">
@@ -259,7 +271,7 @@
 
       	</table>
       </div>
-      <script src="Clinique/assets/bootstrap/bootstrap.min.css"></script>
+      <script src="assets/Javascript/bootstrap.min.js"></script>
 
 </body>
 </html>
