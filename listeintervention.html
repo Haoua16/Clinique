@@ -123,8 +123,8 @@
          </div>             
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" >Oui</button>
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Non</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Partager</button>
+        <button type="button" class="btn btn-success" >Imprimer</button>
       </div>
     </div>
   </div>
@@ -161,8 +161,8 @@
          </div>             
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" >Oui</button>
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Non</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">partager</button>
+        <button type="button" class="btn btn-success" >Imprimer</button>
       </div>
     </div>
   </div>
@@ -208,7 +208,7 @@
     <form action="">
         <input type="search" placeholder="rechercher">
      </form>
-     <div class="container tdepart" >
+     <div class="container tdepart text-center" >
       <table class="table table-bordered" style="width: 1000px;">
           <thead class="table-light">
           <tr class="col-2">
@@ -216,7 +216,8 @@
             <th class="col-2">Prenom du patient</th>
             <th class="col-3">Type d'Interventions</th>
             <th class="col-1">Date</th>
-            <th colspan="2" class="col-6">Actions</th>
+            <th class="col-3">Actions</th>
+            <th class="col-3">Détails</th>
           </tr>
           </thead>
           <tbody>
@@ -229,8 +230,9 @@
                   <button type="button" class="btn btn-success">Modifier</button>
                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Supprimer </button>
-                    <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#printl">Imprimer</button>
-                 
+                    <td>
+                      <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#printl">voir</button>
+                    </td>
                 </td>
             </tr>
               <tr>
@@ -242,8 +244,9 @@
                   <button type="button" class="btn btn-success">Modifier</button>
                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Supprimer</button>
-                    <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#print2">Imprimer</button>
-                  
+                    <td>
+                    <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#print2">voir</button>
+                  </td>
                 </td>
               </tr>
           </tbody>
