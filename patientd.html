@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/img.jpeg" type="image/x-icon">
-    <title>Document</title>
+    <title>Patients</title>
     <link rel="stylesheet" href="Assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="Assets/css/figma.css">
+    <link rel="stylesheet" href="Assets/css/patientd.css">
 </head>
 <body>
 
@@ -125,6 +125,96 @@
   
 <!-- Fin d'ajout -->
 
+
+<!-- Modifier Patient -->
+
+<div class="modal fade" id="mdpatient" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279c4f;">
+          <h5 class="modal-title" id="exampleModalLabel">Modifier un patient</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="">Nom</label>
+                    </div>
+                    <div class="col">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Prénom</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Phone</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Civilité</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Age</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+
+
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <label for="">Assurance</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text">
+                    </div>
+                </div>
+            </form>    
+         </div>
+        </div>
+        <div class="modal-footer center">
+          <button type="button" style="margin-right: 110px;" class="btn btn-danger">Annuler</button>
+          <button type="button" style="margin-right: 80px;" class="btn btn-primary" data-bs-dismiss="modal">Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Fin de Modification -->
+
     <div class="topp">
         <img src="Assets/img/img.jpeg">
         <div class="container">
@@ -169,7 +259,8 @@
             <td>32 ans</td>
             <td>Amo</td>
             <td>
-                <button class="btn btn-success">Modifier</button>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdpatient">Modifier</button>
+
                 <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer</button>
             </td>
             <td><button class="btn btn-primary" onclick="location.href='detailsp1.html';">Voir</button></td>
@@ -183,8 +274,8 @@
             <td>Monsieur</td>
             <td>20 ans</td>
             <td>Lafia</td>
-            <td>
-                <button class="btn btn-success">Modifier</button>
+            <td>  
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdpatient">Modifier</button>
                 <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer</button>
             </td>
             <td><button class="btn btn-primary" onclick="location.href='detailsp1.html';">Voir</button></td>
@@ -198,7 +289,7 @@
             <td>39 ans</td>
             <td>Bleu</td>
             <td>
-                <button class="btn btn-success">Modifier</button>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdpatient">Modifier</button>
                 <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer</button>
             </td>
             <td><button class="btn btn-primary" onclick="location.href='detailsp1.html';">Voir</button></td>
@@ -213,7 +304,7 @@
             <td>20 ans</td>
             <td>Amo</td>
             <td>
-                <button class="btn btn-success">Modifier</button>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdpatient">Modifier</button>
                 <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer</button>
             </td>
             <td><button class="btn btn-primary" onclick="location.href='detailsp1.html';">Voir</button></td>

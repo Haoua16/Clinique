@@ -83,13 +83,99 @@
     </div>
   </div>
   
+  <!-- Modal pour modifier un ticket -->
+
+  <div class="modal fade" id="mdform" tabindex="-1" aria-labelledby="addform" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="addform">Modifier un paiement</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="addd">
+            <form action="">
+              <div class="containter">
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="number">Numéro</label>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="number" name="" id="number">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-4">
+                    <label for="name">Nom</label>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" name="" id="name">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-4">
+                    <label for="username">Prénom</label>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" name="" id="username">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-4">
+                    <label for="">Prix</label>
+                  </div>
+                  <div class="col">
+                    <input type="varchar" name="" id="number">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-4">
+                    <label for="Date">Date</label>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="date" name="" id="Date">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-4">
+                    <label for="">Mode de paiement</label>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" name="" id="motif">
+                  </div>
+                </div>
+              </div>
+          
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger ajoutb" >Annuler</button>
+          <button type="button" class="btn btn-primary ajoutb" data-bs-dismiss="modal">Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Fin de modification -->
   <!-- modal pour generer le reçu du ticket -->
 
   <div class="modal fade" id="sup3" tabindex="-1" aria-labelledby="sup3" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content" style="width: 900px;right: 200px;">
         <div class="modal-header" style="background-color: #279C4F;">
-          <h5 class="modal-title" id="sup3">Reçcu du ticket</h5>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-1">
+                <img src="assets/img/logo.jpeg" width="30px" height="30px" >
+
+              </div>
+              <div class="col-md-4">
+                <h5 class="modal-title" id="sup3">Reçu du ticket</h5>
+              </div>
+            </div>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
           <div class="modal-body">
@@ -136,7 +222,17 @@
     <div class="modal-dialog">
       <div class="modal-content" style="width: 900px;right: 200px;">
         <div class="modal-header" style="background-color: #279C4F;">
-          <h5 class="modal-title" id="sup3">Reçu du ticket</h5>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="assets/img/logo.jpeg" width="60px" height="60px" >
+
+              </div>
+              <div class="col">
+                <h5 class="modal-title" id="sup3">Reçu du ticket</h5>
+              </div>
+            </div>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
           <div class="modal-body">
@@ -205,7 +301,7 @@
                 <li class="nav_items">Anw Ko keneya</li>
               
                 <li>
-                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addform">Ajouter</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addform">Ajouter</button>
                 </li>
                 
             </ul>
@@ -215,7 +311,7 @@
       </div>
   
       
-      <div style="background-color: #279C4F;" class="aa">
+      <div style="background-color: #047BF5;" class="aa">
           <img src="assets/img/logo.jpeg" width="60px" height="60px">
       </div>
   
@@ -252,8 +348,8 @@
               <td>10 000 Franc Cfa</td>
               <td>25 Mars 2022</td>
               <td>Cash</td>
-              <td class="button">
-                <button type="button" class="btn btn-success">Modifier</button>
+              <td class="button"> 
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdform">Modifier</button>
               </td>
               <td class="button">
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#tickn">Supprimer</button>
@@ -270,7 +366,7 @@
                 <td>25 Mars 2022</td>
                 <td>Chèque</td>
                 <td class="button">
-                  <button type="button" class="btn btn-success">Modifier</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdform">Modifier</button>
                 </td>
                 <td class="button">
                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#tickn">Supprimer</button>
@@ -287,7 +383,7 @@
                 <td>25 Mars 2022</td>
                 <td>Cash</td>
                 <td class="button">
-                  <button type="button" class="btn btn-success">Modifier</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdform">Modifier</button>
                 </td>
                 <td class="button">
                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#tickn">Supprimer</button>
@@ -305,7 +401,7 @@
                 <td>25 Mars 2022</td>
                 <td>Cash</td>
                 <td class="button">
-                  <button type="button" class="btn btn-success">Modifier</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdform">Modifier</button>
                 </td>
                 <td class="button">
                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#tickn">Supprimer</button>

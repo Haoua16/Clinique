@@ -72,6 +72,68 @@
   
   <!-- fin form depart -->
 
+  <!-- Modification -->
+
+  <div class="modal fade" id="mdequip" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="exampleModalLabel">Modifier Equipement</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    <div class="modal-body">
+        <div class="ajint">
+          <form action="">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <label for="name">Nom</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="" id="">
+                </div>
+  
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-3">
+                  <label for="username">Types</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="" id="username">
+                </div>
+              </div>
+  
+              <!-- <div class="row mt-4">
+                <div class="col-md-5">
+                  <label for="username">Prenom du personnel</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="" id="username">
+                </div>
+              </div> -->
+  
+              <div class="row mt-4">
+                <div class="col-md-3">
+                  <label for="username">Date</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="date" name="" id="username">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger intb" data-bs-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-primary intb" >Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIn de Modification -->
+
 
 
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -131,8 +193,8 @@
                       <td>Stethoscope</td>
                       <td>Materiel d'ausculation</td>
                       <td>12/03/2022</td> 
-                      <td>
-                        <button type="button" class="btn btn-success">Modifier</button>
+                      <td> 
+                        <button type="button" class="btn btn-success"data-bs-toggle="modal" data-bs-target="#mdequip">Modifier</button>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Supprimer
                         </button>
@@ -143,7 +205,7 @@
                       <td>Chirurgie Infatile</td>
                       <td>25/05/2002</td>
                       <td>
-                        <button type="button" class="btn btn-success">Modifier</button>
+                        <button type="button" class="btn btn-success"data-bs-toggle="modal" data-bs-target="#mdequip">Modifier</button>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Supprimer
                         </button>
