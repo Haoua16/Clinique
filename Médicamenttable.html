@@ -61,6 +61,14 @@
                         <input type="text" name="Quantité"><br> 
                    </div>  
             </div>
+            <div class="row mt-4">
+              <div class="col-md-4">
+                   <label for="Quantité">Date d'achat</label>
+              </div>  
+              <div class="col-md">
+                   <input type="date" name="Quantité"><br> 
+              </div>  
+           </div>
             </div>                       
           </form>
         </div>       
@@ -85,6 +93,84 @@
 </div>
 
       <!-- Button trigger modal -->
+
+      <!-- Modal de modification -->
+
+      <div class="modal fade" id="mdmed" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modifier medicaments</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="formul">
+                <form>
+                  <div class="container">
+                     <div class="row mt-4">
+                          <div class="col-md-4">
+                             <label for="Numéro">Numéro</label>
+                          </div>  
+                          <div class="col-md">
+                             <input type="text" name="Numéro"><br>
+                          </div>                    
+                  </div>
+                  <div class="row mt-4">
+                         <div class="col-md-4">
+                             <label for="Nom">Nom</label>
+                         </div>  
+                         <div class="col-md">
+                             <input type="text" name="Nom"><br>
+                         </div>                                   
+                  </div>
+                  <div class="row mt-4">
+                         <div class="col-md-4">
+                              <label for="Type">Type</label>
+                         </div>  
+                         <div class="col-md">
+                              <input type="text" name="Type"><br>
+                         </div>
+                  </div>
+                  <div class="row mt-4">
+                         <div class="col-md-4">
+                              <label for="Quantité">Quantité</label>
+                         </div>  
+                         <div class="col-md">
+                              <input type="text" name="Quantité"><br> 
+                         </div>  
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-md-4">
+                         <label for="Quantité">Date d'achat</label>
+                    </div>  
+                    <div class="col-md">
+                         <input type="date" name="Quantité"><br> 
+                    </div>  
+                 </div>
+                  </div>                       
+                </form>
+              </div>       
+            </div>
+            <div class="modal-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3">
+        
+                  </div>
+                  <div class="col-md-3">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+                  </div>
+                  <div class="col">
+                  <button type="button" class="btn btn-primary">Enregistrer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin de Modification -->
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -111,7 +197,7 @@
       	  <h3>Anw ko kènèya</h3>
       	  </div>
       	  <div class="btn">
-      	  <button href="" class="btn btn-success" id="enr2" data-bs-toggle="modal" data-bs-target="#addmed">Ajouter</button>
+      	  <button href="" class="btn btn-primary" id="enr2" data-bs-toggle="modal" data-bs-target="#addmed">Ajouter</button>
       	  </div>
       </div>
       <div class="deuxième"></div>
@@ -119,7 +205,7 @@
       <div class="brdenbas1"></div>
       <div class="brdenbas2"></div>
       <div class="brdàcoté1"></div>
-      <div class="brdàcoté2"></div>
+      <div class="brdàcoté2"></div>         
         <div class="listerecherche">
       	   <div class="liste">
       	   <h4>La liste des médicaments</h4>
@@ -135,6 +221,7 @@
       		    <th class="colonne">Nom</th>
       		    <th class="colonne">Type</th>
       		    <th class="colonne">Quantité</th>
+              <th class="colonne">Date d'achat</th>
            		<th class="colonne">Action</th>
            		</tr>
       		<tr>
@@ -142,7 +229,8 @@
 		          <td class="ligne">Paracetamol</td>
 		          <td class="ligne">Comprimé</td>
 		          <td class="ligne">100</td>
-		          <td class="ligne"><a href="" class="btn btn-success" id="enr3">Modifier</a>	  
+              <td class="ligne">25/02/2022</td>
+		          <td class="ligne"><a href="" class="btn btn-success" id="enr3" data-bs-toggle="modal" data-bs-target="#mdmed">Modifier</a>	  
                  <!-- Button trigger modal -->
                   <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                   </button></td>

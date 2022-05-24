@@ -62,24 +62,96 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger ajoutb" >Annuler</button>
-          <button type="button" class="btn btn-primary ajoutb" data-bs-dismiss="modal">Enregistrer</button>
+
+          <div class="container-fluid " >
+            <div class="ajouta">
+              <button type="button" class="btn btn-danger" >Annuler</button>
+              <button type="button" class="btn btn-primary ml" data-bs-dismiss="modal">Enregistrer</button>
+            </div>
+            
+          </div>
+        
         </div>
       </div>
     </div>
   </div>
   
+  <!-- Modal pour modification -->
+
+  <div class="modal fade" id="mdphar" tabindex="-1" aria-labelledby="addfor" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="addfor">Modifier une pharmacie</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="addd">
+            <form action="">
+              <div class="containter">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="number">Numéro</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="number" name="" id="number">
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="">Etat</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="etat">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="name">Emplacement</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="emplacement">
+                  </div>
+                </div>             
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="Date">Date</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="date" name="" id="Date">
+                  </div>
+                </div>
+              </div>
+          
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="container-fluid " >
+            <div class="ajouta">
+              <button type="button" class="btn btn-danger" >Annuler</button>
+              <button type="button" class="btn btn-primary ml" data-bs-dismiss="modal">Enregistrer</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fin de modification -->
   
   <!-- Modal pour la suppression -->
   <div class="modal fade" id="supp" tabindex="-1" aria-labelledby="supp" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="supp">Supprimer</h5>
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="supp">Confirmer la suppression</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Voulez-vous vraiment Supprimer cette ligne ?
+          Voulez-vous vraiment supprimer cette ligne ?
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Oui</button>
@@ -100,7 +172,7 @@
           <li class="nav_items">Anw Ko keneya</li>
         
           <li>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addfor">Ajouter</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addfor">Ajouter</button>
           </li>
             
         </ul>
@@ -110,7 +182,7 @@
     </div>
 
     
-    <div style="background-color: #279C4F;" class="aa">
+    <div style="background-color: #047BF5;" class="aa">
         <img src="assets/img/logo.jpeg" width="60px" height="60px">
     </div>
 
@@ -142,8 +214,8 @@
             <td>Douche interne disponible</td>
             <td>Batiment G Nord-Est 2ème étage</td>
             <td>28 Février 2022</td>
-            <td class="button">
-              <button type="button" class="btn btn-success">Modifier</button>
+            <td class="button"> 
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdphar">Modifier</button>
             </td>
             <td class="button">
               <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#supp">
@@ -158,8 +230,7 @@
             <td>Batiment A Sud Rez de chaussez</td>
             <td>26 Mars 2022</td>
             <td>
-              <button type="button" class="btn btn-success">Modifier</button>
-            </td>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdphar">Modifier</button>            </td>
             <td>
               <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#supp">
                 Supprimer

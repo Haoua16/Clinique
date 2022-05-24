@@ -65,7 +65,7 @@ h2
 
 .or
  {
-  border: 1px solid black;  auront une bordure de 1px 
+  border: 1px solid black; /* auront une bordure de 1px */
   width: 21%;
  }
 

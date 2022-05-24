@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="img/log.png" type="image/x-icon">
   
+    
 </head>
   <!-- Formulaire Consultation -->
   <div class="modal fade" id="ajconsult" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -61,8 +62,19 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger"data-bs-dismiss="modal">Annuler</button>
-          <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Enregistrer</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+
+              </div>
+              <div class="col-md-3">
+                <button type="button" class="btn btn-danger"data-bs-dismiss="modal">Annuler</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Enregistrer</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -70,10 +82,83 @@
 
   <!-- Fin de Formulaire Consultation -->
 
+  <!-- Modifier la consultation -->
+
+  <div class="modal fade" id="mdconsult" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #279C4F;">
+          <h5 class="modal-title" id="exampleModalLabel">Modifier une consultation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="cons">
+            <form action="">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-5">
+                    <label for="name">Nom_Patient</label> 
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="">  
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-5">
+                    <label for="username">Prenom_patient</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="unsername">
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-5">
+                    <label for="username">Date de consultation</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="date" name="" id="unsername">
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-5">
+                    <label for="username">Type de consultation</label>
+                  </div>
+
+                  <div class="col-md-3">
+                    <input type="text" name="" id="unsername">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+
+              </div>
+              <div class="col-md-3">
+                <button type="button" class="btn btn-danger"data-bs-dismiss="modal">Annuler</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Enregistrer</button>
+              </div>
+            </div>
+          </div>
+         
+         
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- Fin de modification -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header" style="background-color: #279C4F;">
           <h5 class="modal-title" id="exampleModalLabel">Confirmer la suppression </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -118,12 +203,12 @@
         </div>
       </div>
         <div class="modal-footer btnn">
-          <button type="button" class="btn btn-success"  >Imprimer</button>
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Partager</button>
+          <button type="button" class="btn btn-success"  >Imprimer</button>
         </div>
       </div>
     </div>
-  </div>
+  </div>  
 
   <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -195,8 +280,8 @@
                             <td>Troaré</td>
                             <td>Prénatale</td>
                             <td>12/12/2021</td>
-                            <td>
-                              <button type="button" class="btn btn-success">Modifier</button>
+                            <td>  
+                              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdconsult">Modifier</button>
                               <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer </button>
                              </td>
                             <td>
@@ -209,7 +294,8 @@
                             <td>Touré</td>
                             <td>Prenatale</td>
                             <td>24/12/2021</td>
-                            <td><button class="btn btn-success">Modifier</button>
+                            <td>
+                              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdconsult">Modifier</button>
                               <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer</button>
                             </td>
                             <td>

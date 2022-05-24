@@ -90,6 +90,85 @@
   </div>
 </div>
 
+<!-- Modifier une salle -->
+
+<div class="modal fade" id="mdsalles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modifier une salle</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div class="formul">
+			  <form>
+				  <div class="container">
+						  <div class="row mt-4">
+							  <div class="col-md-4">
+									<label for="Type">Type</label>
+								</div>	
+							  <div class="col-md">
+								  <input type="text" name="Type"><br>
+							  </div>
+								</div>
+						  <div class="row mt-4">
+							  <div class="col-md-4">
+									<label for="Numéro">Numéro</label>
+								</div>	
+							  <div class="col-md">
+								  <input type="text" name="Numéro"><br>
+							  </div>			    		    	
+							  </div>
+						  <div class="row mt-4">
+							  <div class="col-md-4">
+									<label for="Taille">Taille</label>
+								</div>	
+							  <div class="col-md">
+								  <input type="text" name="Taille"><br>
+							  </div>			    	    		    	         
+							  </div>
+						  <div class="row mt-4">
+							  <div class="col-md-4">
+									<label for="Etat">Etat</label>
+								</div>	
+							  <div class="col-md">
+								  <input type="text" name="Etat"><br>	    	
+							  </div> 	
+								</div>
+								  <div class="row mt-4">
+							  <div class="col-md-4">
+									<label for="Emplacement">Emplacement</label>
+								</div>	
+							  <div class="col-md">
+									<input type="text" name="Emplacement">
+							  </div>
+						  </div>	 	 		    		    	    
+					 </div>            	     	  	
+			  </form>
+			</div>       
+		</div>
+		<div class="modal-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+  
+					</div>
+					<div class="col-md-3">
+					  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+					</div>
+					<div class="col">
+					  <button type="button" class="btn btn-primary">Enregistrer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+<!-- Fin de modificcation -->
+
+
   <!-- End Of Test -->
 	    			
 		 <!-- Button trigger modal -->
@@ -142,21 +221,38 @@
 		          <td class="ligne">M.Grand</td>
 		          <td class="ligne">Bonne</td>
 		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne">
+					  <button class="btn btn-success" id="enr1" data-bs-toggle="modal" data-bs-target="#mdsalles ">Modifier</button>
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
-                      </button></td>
-                  </tr>
+                      </button>
+				</td>
+            </tr>
+            <tr>
+		          <td class="ligne">Salle M.Chef</td>
+		          <td class="ligne">001</td>
+		          <td class="ligne">M.Grand</td>
+		          <td class="ligne">Bonne</td>
+		          <td class="ligne">D.Accueil</td>
+				  <td class="ligne">
+		          <button class="btn btn-success"id="enr1" data-bs-toggle="modal" data-bs-target="#mdsalles ">Modifier</button>	  
+                      <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer</button>
+                      
+					</td>
+            </tr>                  
                   <tr>
 		          <td class="ligne">Salle M.Chef</td>
 		          <td class="ligne">001</td>
 		          <td class="ligne">M.Grand</td>
 		          <td class="ligne">Bonne</td>
 		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+				  <td class="ligne">
+		          <button class="btn btn-success" id="enr1" data-bs-toggle="modal" data-bs-target="#mdsalles ">Modifier</button>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
-                      </button></td>
+                      </button>
+					</td>
                   </tr>                  
                   <tr>
 		          <td class="ligne">Salle M.Chef</td>
@@ -164,10 +260,12 @@
 		          <td class="ligne">M.Grand</td>
 		          <td class="ligne">Bonne</td>
 		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+				  <td class="ligne">
+		          <button class="btn btn-success" id="enr1" data-bs-toggle="modal" data-bs-target="#mdsalles ">Modifier</button>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
-                      </button></td>
+                      </button>
+					</td>
                   </tr>                  
                   <tr>
 		          <td class="ligne">Salle M.Chef</td>
@@ -175,10 +273,12 @@
 		          <td class="ligne">M.Grand</td>
 		          <td class="ligne">Bonne</td>
 		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+				  <td class="ligne">
+		          <button class="btn btn-success" id="enr1" data-bs-toggle="modal" data-bs-target="#mdsalles ">Modifier</button>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
-                      </button></td>
+                      </button>
+				  </td>
                   </tr>                  
                   <tr>
 		          <td class="ligne">Salle M.Chef</td>
@@ -186,18 +286,8 @@
 		          <td class="ligne">M.Grand</td>
 		          <td class="ligne">Bonne</td>
 		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
-                      <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
-                      </button></td>
-                  </tr>                  
-                  <tr>
-		          <td class="ligne">Salle M.Chef</td>
-		          <td class="ligne">001</td>
-		          <td class="ligne">M.Grand</td>
-		          <td class="ligne">Bonne</td>
-		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+				  <td class="ligne">
+		          <button class="btn btn-success" id="enr1" data-bs-toggle="modal" data-bs-target="#mdsalles">Modifier</button>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -208,7 +298,8 @@
 		          <td class="ligne">M.Grand</td>
 		          <td class="ligne">Bonne</td>
 		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne">
+					  <button class="btn btn-success" data-bs-toggle="modal" id="enr1" data-bs-target="#mdsalles">Modifier</button>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -219,7 +310,21 @@
 		          <td class="ligne">M.Grand</td>
 		          <td class="ligne">Bonne</td>
 		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+				  <td class="ligne">
+		          <button class="btn btn-success" id="enr1" data-bs-toggle="modal" data-bs-target="#mdsalles">Modifier</button>	  
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
+                      </button>
+					</td>
+                  </tr>                  
+                  <tr>
+		          <td class="ligne">Salle M.Chef</td>
+		          <td class="ligne">001</td>
+		          <td class="ligne">M.Grand</td>
+		          <td class="ligne">Bonne</td>
+		          <td class="ligne">D.Accueil</td>
+				  <td class="ligne">
+		          <button class="btn btn-success" id="enr1" data-bs-toggle="modal" data-bs-target="#mdsalles">Modifier</button>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
                       </button></td>
@@ -230,10 +335,12 @@
 		          <td class="ligne">M.Grand</td>
 		          <td class="ligne">Bonne</td>
 		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+				  <td class="ligne">
+		          <button class="btn btn-success" id="enr1" data-bs-toggle="modal" data-bs-target="#mdsalles">Modifier</button>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
-                      </button></td>
+                      </button>
+					</td>
                   </tr>                  
                   <tr>
 		          <td class="ligne">Salle M.Chef</td>
@@ -241,10 +348,12 @@
 		          <td class="ligne">M.Grand</td>
 		          <td class="ligne">Bonne</td>
 		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne">
+					  <button class="btn btn-success" id="enr1" data-bs-toggle="modal" data-bs-target="#mdsalles">Modifier</button>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
-                      </button></td>
+                      </button>
+				</td>
                   </tr>                  
                   <tr>
 		          <td class="ligne">Salle M.Chef</td>
@@ -252,21 +361,12 @@
 		          <td class="ligne">M.Grand</td>
 		          <td class="ligne">Bonne</td>
 		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
+		          <td class="ligne">
+					<button class="btn btn-success" id="enr1"  data-bs-toggle="modal" data-bs-target="#mdsalles">Modifier</button>	  
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
-                      </button></td>
-                  </tr>                  
-                  <tr>
-		          <td class="ligne">Salle M.Chef</td>
-		          <td class="ligne">001</td>
-		          <td class="ligne">M.Grand</td>
-		          <td class="ligne">Bonne</td>
-		          <td class="ligne">D.Accueil</td>
-		          <td class="ligne"><a href="Sallesform.html" class="btn btn-success" id="enr3">Modifier</a>	  
-                      <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-danger" id="enr1" data-bs-toggle="modal" data-bs-target="#exampleModal">Supprimer
-                      </button></td>
+                      </button>
+					</td>
                   </tr>
 
       	</table>
