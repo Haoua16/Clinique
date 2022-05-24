@@ -73,10 +73,72 @@
     </div>
      <!-- Fin d'ajout -->
 
+     <!-- MOdifier Consultation -->
+
+     <div class="modal fade" id="modcons" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #279C4F;">
+            <h5 class="modal-title" id="exampleModalLabel">Modifier une intervention</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+      <div class="modal-body">
+          <div class="ajint">
+            <form action="">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="name">Nom</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="">
+                  </div>
+
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="username">Prenom</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="username">
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="username">Type</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" name="" id="username">
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-3">
+                    <label for="username">Date</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="date" name="" id="username">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger intb" data-bs-dismiss="modal" >Annuler</button>
+            <button type="button" class="btn btn-primary intb" >Enregistrer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Fin du Modal -->
+
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header" style="background-color: #279C4F;">
           <h5 class="modal-title" id="exampleModalLabel">Confirmer la suppression</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -227,7 +289,7 @@
                 <td>Chirurgie vasculaire</td>
                 <td>30/05/1990</td> 
                 <td>
-                  <button type="button" class="btn btn-success">Modifier</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modcons">Modifier</button>
                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Supprimer </button>
                     <td>
@@ -241,7 +303,7 @@
                 <td>Chirurgie Infatile</td>
                 <td>25/05/2002</td>
                 <td>
-                  <button type="button" class="btn btn-success">Modifier</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modcons">Modifier</button>
                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Supprimer</button>
                     <td>

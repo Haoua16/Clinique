@@ -21,7 +21,7 @@ body{
 }
 
 ul{
-    background-color: #047BF5;
+    background-color:#279C4F;  
 }
 
 .nav_items{
@@ -41,6 +41,25 @@ ul{
    
 }
 
+/* Centrer les boutons annuler et enregistrer */
+
+.ajouta
+{
+    width: 250px;
+    position: relative;
+    left: 100px;
+    /* background-color: aqua; */
+}
+
+/* Fin */
+
+/* Button enregistrer */
+
+.ml
+{
+    margin-left: 55px;
+}
+/* fin du button */
 .container{
     position: relative;
     bottom: 680px;

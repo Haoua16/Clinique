@@ -132,6 +132,125 @@
 
 <!-- Fin du modal Ajout -->
 
+<!-- Modifier les données personnel -->
+
+<div class="modal fade" id="modperso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header placement">
+        <h5 class="modal-title" id="exampleModalLabel">Modifier un Personnel</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="formulaire">
+          <form action="">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <label for="">Nom</label>
+                      </div>
+                      <div class="col-md">
+                          <input type="text" class="inpsize">
+                      </div>
+                  </div>
+
+                  <div class="row mt-4">
+                        <div class="col-md-4">
+                          <label for="">Prenom</label> 
+                        </div>
+                      <div class="col-md">
+                        <input type="text" class="inpsize">
+                      </div>
+                  </div>
+
+                  <div class="row mt-4">
+                      <div class="col-md-4">
+                          <label for="">Civilite</label>
+                      </div>
+                      <div class="col-md">
+                          <input type="text" class="inpsize">
+                      </div>   
+                  </div>
+
+                  <div class="row mt-4">
+                      <div class="col-md-4">
+                          <label for="">Telephone</label>
+                      </div>
+                      <div class="col-md">
+                          <input type="text" class="inpsize">
+                      </div>    
+                  </div>
+
+                  <div class="row mt-4">
+                      <div class="col-md-4">
+                          <label for="">Email</label>
+                      </div>
+                      <div class="col-md">
+                          <input type="text" class="inpsize">
+                      </div>    
+                  </div>
+
+                  <div class="row mt-4">
+                      <div class="col-md-4">
+                          <label for="">Profession</label>
+                      </div>
+                      <div class="col-md">
+                          <input type="text" class="inpsize">
+                      </div>    
+                  </div>
+
+                  <div class="row mt-4">
+                      <div class="col-md-4">
+                          <label for="">Specialite</label>
+                      </div>
+                      <div class="col-md">
+                          <input type="text" class="inpsize">
+                      </div>    
+                  </div>
+
+                  <div class="row mt-4">
+                      <div class="col-md-4">
+                          <label for="">Username</label>
+                      </div>
+                      <div class="col-md">
+                          <input type="text" class="inpsize">
+                      </div>    
+                  </div>
+
+                  <div class="row mt-4">
+                      <div class="col-md-4">
+                          <label for="">Mot de passe</label>
+                      </div>
+                      <div class="col-md">
+                          <input type="text" class="inpsize">
+                      </div>    
+                  </div>
+
+              </div>
+          </form>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary">Enregistrer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fin de modification -->
+
 <!-- Modal Delete -->
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -160,7 +279,7 @@
       <div class="col-md-1">
         <!-- <button type="button" class="btn btn-danger ajout" > Retour </button> -->
       </div>
-        <div class="col-md-7">  
+        <div class="col-md-8">  
             <p class="liste"> La liste de personnel</p>
         </div>
         <div class="col">
@@ -213,8 +332,8 @@
                       <td>Comptable</td>
                       <td>Neant</td>
                       <td>Neant</td>
-                      <td>
-                        <button type="button" class="btn btn-success btn-sm marg">Modifier</button>
+                      <td>   
+                        <button type="button" class="btn btn-success btn-sm marg" data-bs-toggle="modal" data-bs-target="#modperso">Modifier</button>
                         <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal">
                           Supprimer
                         </button>
@@ -230,7 +349,7 @@
                       <td>Neant</td>
                       <td>Haouacoul</td>
                       <td>
-                        <button type="button" class="btn btn-success btn-sm">Modifier</button>
+                        <button type="button" class="btn btn-success btn-sm marg" data-bs-toggle="modal" data-bs-target="#modperso">Modifier</button>
                         <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal">
                           Supprimer
                         </button>

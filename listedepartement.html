@@ -62,6 +62,60 @@
 
 <!-- fin form depart -->
 
+<!-- Modifier departement -->
+
+<div class="modal fade" id="mddep" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #279C4F;">
+        <h5 class="modal-title" id="exampleModalLabel">Modifier un departement</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <div class="modal-body">
+        <div class="ajint">
+          <form action="">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <label for="name">Nom du departement</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="" id="">
+                </div>
+
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-5">
+                  <label for="username">Nom du personnel</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="" id="username">
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-md-5">
+                  <label for="username">Prenom du personnel</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="" id="username">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger intb"data-bs-dismiss="modal" >Annuler</button>
+        <button type="button" class="btn btn-primary intb" >Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Fin de modification -->
+
 
 <!-- Button trigger modal -->
 
@@ -69,7 +123,7 @@
 <div class="modal fade" id= "exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header" style="background-color: #279C4F;">
         <h5 class="modal-title" id="exampleModalLabel">Confirmer la suppression</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -118,7 +172,7 @@
                       <td>Diagui</td>
                       <td>Tounkara</td> 
                       <td>
-                      <button type="button" class="btn btn-success">Modifier</button>
+                      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mddep">Modifier</button> 
                       <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Supprimer
                       </button>
@@ -131,7 +185,7 @@
                       <td>Severin</td>
                       <td>Togo</td>
                       <td>
-                        <button type="button" class="btn btn-success">Modifier</button>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mddep">Modifier</button>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Supprimer
                         </button>

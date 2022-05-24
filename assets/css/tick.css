@@ -19,10 +19,10 @@ body{
     display: flex;
     gap: 20px;
     justify-content: center;
-}
+} 
 
 ul{
-    background-color: #047BF5;
+    background-color: #279C4F ;
 }
 
 .nav_items{
