@@ -24,7 +24,7 @@
       		<div class="modal-body">
         		<div class="leformulaire">
 	    			<div class="formul1">	    		      
-	    				<form>
+	    				<form method="post" action="http://localhost/Clinique/dossierphp/controller.php">
 	    					<div class="container">
 	    						<div class="row">
 	    							<div class="col-md-3">
@@ -34,7 +34,16 @@
 	    								<input type="text" name="Nom"><br>
 	    							</div>
 	    						</div>
-	    						<div class="row mt-3">	
+	    						
+	    						<div class="row mt-4">		
+	    							<div class="col-md-3">
+	    								<label for="Prénom">Prénom</label>
+	    							</div>
+	    							<div class="col-md">
+	    								<input type="text" name="Prénom"><br>
+	    							</div>
+	    						</div>
+								<div class="row mt-3">	
 	    							<div class="col-md-3">
 	    								<label for="Phone">Phone</label>
 	    							</div>
@@ -44,18 +53,10 @@
 	    						</div>
 	    						<div class="row mt-4">		
 	    							<div class="col-md-3">
-	    								<label for="Prénom">Prénom</label>
-	    							</div>
-	    							<div class="col-md">
-	    								<input type="text" name="Prénom"><br>
-	    							</div>
-	    						</div>
-	    						<div class="row mt-4">		
-	    							<div class="col-md-3">
 	    					      		<label for="Adresse">Adresse</label>
 	    							</div>
 	    							<div class="col-md">
-	    								<input type="text" name="Adresse"><br>	    	
+	    								<input type="email(" name="Adresse"><br>	    	
 	    							</div>
 	    						</div>	
 	    						<div class="row mt-4">		
@@ -66,29 +67,30 @@
 	    								<input type="text" name="Type">
 	    							</div>
 	    						</div>
-	    					</div>		    	
+	    					</div>
+							<div class="modal-footer">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-3">
+			  
+										</div>
+											<div class="col-md-3">
+											<button type="button" class="btn btn-danger" class="boen">Annuler</button>
+										  </div>
+										<div class="col">
+										  <button type="submit" class="btn btn-primary" class="boen" data-bs-dismiss="modal">Enregistrer</button>
+			  
+										</div>
+									</div>
+								</div>
+							  
+						   </div>		    	
 						</form>
 					</div>
 	      		</div>	    	   
       		</div>
       
-      		<div class="modal-footer">
-				  <div class="container">
-					  <div class="row">
-						  <div class="col-md-3">
-
-						  </div>
-						  	<div class="col-md-3">
-							  <button type="button" class="btn btn-danger" class="boen">Annuler</button>
-							</div>
-						  <div class="col">
-							<button type="button" class="btn btn-primary" class="boen" data-bs-dismiss="modal">Enregistrer</button>
-
-						  </div>
-					  </div>
-				  </div>
-        		
-     		</div>
+      		
 		</div>
     </div>           
 </div> 
@@ -116,20 +118,21 @@
 	    								<input type="text" name="Nom"><br>
 	    							</div>
 	    						</div>
-	    						<div class="row mt-3">	
-	    							<div class="col-md-3">
-	    								<label for="Phone">Phone</label>
-	    							</div>
-	    							<div class="col-md">
-	    								<input type="text" name="Phone"><br>
-	    							</div>
-	    						</div>
+	    						
 	    						<div class="row mt-4">		
 	    							<div class="col-md-3">
 	    								<label for="Prénom">Prénom</label>
 	    							</div>
 	    							<div class="col-md">
 	    								<input type="text" name="Prénom"><br>
+	    							</div>
+	    						</div>
+								<div class="row mt-3">	
+	    							<div class="col-md-3">
+	    								<label for="Phone">Phone</label>
+	    							</div>
+	    							<div class="col-md">
+	    								<input type="text" name="Phone"><br>
 	    							</div>
 	    						</div>
 	    						<div class="row mt-4">		
@@ -148,8 +151,12 @@
 	    								<input type="text" name="Type">
 	    							</div>
 	    						</div>
+								<div class="col">
+									<button type="button" class="btn btn-primary" class="boen" data-bs-dismiss="modal">Enregistrer</button>
+		
+								  </div>
 	    					</div>		    	
-						</form>
+						
 					</div>
 	      		</div>	    	   
       		</div>
@@ -171,6 +178,7 @@
 				  </div>
         		
      		</div>
+		           </form>
 		</div>
     </div>           
 </div> 

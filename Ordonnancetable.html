@@ -25,14 +25,14 @@
       </div>
       <div class="modal-body">
       	<div class="formul">
-      	  <form>
+      	  <form method="post" action="http://localhost/haoua/Clinique/dossierphp/ordonnance.php">
       	  	<div class="container">
 	    				<div class="row mt-4">
 	    					<div class="col-md-4">
-	    					      <label for="Type">Type</label>
+	    					      <label for="Types">Types</label>
 	    				      </div>	
 	    					<div class="col-md">
-	    						<input type="text" name="Type"><br>
+	    						<input type="text" name="Types"><br>
 	    					</div>
 	    	                  </div>
 	    	                  <div class="row mt-4">
@@ -53,14 +53,14 @@
 	    		            </div>
 	    			      <div class="row mt-4">
 	    					<div class="col-md-4">
-	    					      <label for="Date">Date</label>
+	    					      <label for="Dates">Dates</label>
 	    				      </div>	
 	    					<div class="col-md">
-	    						<input type="text" name="Date"><br>	
+	    						<input type="text" name="Dates"><br>	
 	    					</div> 	
 	    		    	      </div>
 	               </div>            	     	  	
-      	  </form>
+      	 
       	</div>       
       </div>
       <div class="modal-footer ">
@@ -73,12 +73,13 @@
 					<button type="button" class="btn btn-danger" class="boen">Annuler</button>
 				  </div>
 				<div class="col">
-				  <button type="button" class="btn btn-primary" class="boen" data-bs-dismiss="modal">Enregistrer</button>
+				  <button type="submit" class="btn btn-primary" class="boen" data-bs-dismiss="modal">Enregistrer</button>
 
 				</div>
 			</div>
 		</div>
       </div>
+	</form>
     </div>
   </div>
 </div>
